@@ -3,6 +3,9 @@
 var express = require('express');
 var app = express();
 
+var ipaddress = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+
 app.use(express.static(__dirname + '/public'));
 
 var s = "<!DOCTYPE html>";
@@ -106,4 +109,4 @@ app.get('/test', function(req, res){
     res.send(s);
 });
 
-app.listen(3000);
+app.listen(port, ipaddress);
