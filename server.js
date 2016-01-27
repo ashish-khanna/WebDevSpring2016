@@ -21,7 +21,7 @@ s += "</head>";
 s += "<body>";
 s += "";
 s += "<div class='container'>";
-s += "  <h1>PART 6. Programming Assignment </h1>";
+s += "  <h1>PART Demo Rest API </h1>";
 s += "  <h2>1. General Information </h2>";
 s += "  <h3>Your Information </h3>";
 s += "  <form class='form-horizontal' role='form' action='getForm' method='post'>";
