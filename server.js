@@ -109,4 +109,8 @@ app.get('/test', function(req, res){
     res.send(s);
 });
 
+app.get('/hello', function(req, res){
+    res.send("Hello World - this is my testing api");
+});
+
 app.listen(port, ipaddress);
