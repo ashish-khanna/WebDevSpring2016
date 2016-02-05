@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Admin</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Form Maker</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>-->
+                <li><a href="profile.html">Username</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li class="active"><a href="forms.html">Forms</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h2>Fields</h2>
+            <ul class="nav nav-tabs">
+                <li><a href="forms.html">Forms</a></li>
+                <li class="active"><a href="#">Fields</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade in active">
+                    <br/>
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group col-xs-12">
+                                <span class="input-group-addon">
+                                <label for="inputFirstName">First Name:</label>
+                                </span>
+                                <input type="text" aria-describedby="basic-addon2" class="form-control" id="inputFirstName"
+                                       placeholder="Enter First Name">
+                                <span class="input-group-addon">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-align-justify"></span>
+                                </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group col-xs-12">
+                                <span class="input-group-addon">
+                                <label for="inputLastName">Last Name:</label>
+                                </span>
+                                <input type="text" aria-describedby="basic-addon2" class="form-control" id="inputLastName"
+                                       placeholder="Enter Last Name">
+                                <span class="input-group-addon">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-align-justify"></span>
+                                </a>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="input-group col-xs-12">
+                                <span class="input-group-addon">
+                                <label for="inputDOB">Date of birth:</label>
+                                </span>
+                                <input type="date" aria-describedby="basic-addon2" class="form-control" id="inputDOB"
+                                       placeholder="Select">
+                                <span class="input-group-addon">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-align-justify"></span>
+                                </a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group col-xs-12">
+                                <span class="input-group-addon">
+                                <label>Gender:</label>
+                                </span>
+                                <select aria-describedby="basic-addon2" class="form-control">
+                                    <option value="Select">Select</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                                <span class="input-group-addon">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-align-justify"></span>
+                                </a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group col-xs-12">
+                                <span class="input-group-addon">
+                                <label>Roles:</label>
+                                </span>
+                                <label class="form-control" aria-describedby="basic-addon2">
+                                    <input type="checkbox" value=""> Admin
+                                    <input type="checkbox" value=""> Student
+                                    <input type="checkbox" value=""> User
+                                </label>
+                                <span class="input-group-addon">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-align-justify"></span>
+                                </a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group col-xs-12">
+                                <span class="input-group-addon">
+                                <label>License Agreement:</label>
+                                </span>
+                                <label class="form-control" aria-describedby="basic-addon2">
+                                    <input type="radio" name="rd"> Yes
+                                    <input type="radio" name="rd"> No
+                                </label>
+                                <span class="input-group-addon">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-align-justify"></span>
+                                </a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <hr style="border-top-color: #777" size=4>
+
+                        <div class="form-group">
+                            <div class="input-group col-xs-12">
+                                <span class="input-group-addon">
+                                <label>Add New Field:</label>
+                                </span>
+                                <select aria-describedby="basic-addon2" class="form-control">
+                                    <option value="text">Single Line Text</option>
+                                    <option value="date">Date</option>
+                                    <option value="dropdown">Drop down</option>
+                                    <option value="radio">Radio Button</option>
+                                    <option value="paragraph">Paragraph</option>
+                                </select>
+                                <span class="input-group-addon">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </a>
+
+                                </span>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
