@@ -9,11 +9,11 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Form Maker</title>
+    <title>Profile</title>
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="../../css/dashboard.css" rel="stylesheet">
 </head>
 
 <body>
@@ -47,17 +47,51 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
-                <li class="active"><a href="home.view.html">Home</a></li>
-                <li><a href="profile.view.html">Profile</a></li>
-                <li><a href="admin.view.html">Admin</a></li>
-                <li><a href="forms.view.html">Forms</a></li>
+                <li><a href="../home/home.view.html">Home</a></li>
+                <li class="active"><a href="profile.view.html">Profile</a></li>
+                <li><a href="../admin/admin.view.html">Admin</a></li>
+                <li><a href="../forms/forms.view.html">Forms</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Welcome !</h1>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam maximus enim ac finibus. Cras mollis viverra efficitur. Morbi libero erat, hendrerit eget luctus vel, varius a turpis. Morbi finibus sed lorem vel luctus. Curabitur dignissim sem non efficitur tristique. Mauris at hendrerit leo. Phasellus in sem eu nisl sollicitudin tristique. Morbi et eros nunc. Mauris lacinia auctor purus, mollis rhoncus sem vehicula in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam vitae enim sit amet mauris ultricies maximus sed id eros. Cras feugiat id neque ac dignissim. In hac habitasse platea dictumst.</p>
-            </div>
+            <h1 class="page-header">Register</h1>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputUserName" class="col-sm-2 control-label">Username :</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputUserName" placeholder="Enter Username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-sm-2 control-label">Password :</label>
+                    <div class="col-sm-7">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Enter Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputFirstName" class="col-sm-2 control-label">First Name :</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="Enter First Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputLastName" class="col-sm-2 control-label">Last Name :</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Enter Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-sm-2 control-label">Email :</label>
+                    <div class="col-sm-7">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>
