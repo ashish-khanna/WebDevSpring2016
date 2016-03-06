@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="FormApp">
+<html lang="en" ng-app="FormBuilderApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,13 +22,12 @@
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top" ng-include="'views/header/header.view.html'">
+<nav class="navbar navbar-inverse navbar-fixed-top" ng-include="'views/header/header.view.html'" >
 </nav>
 
-<div class="container-fluid" ng-controller="TestController">
+<div class="container-fluid">
     <div class="row">
         <div ng-include="'views/sidebar/sidebar.view.html'"></div>
-
         <!-- View Template will load here-->
         <div ng-view>
         </div>

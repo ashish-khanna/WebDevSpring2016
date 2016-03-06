@@ -3,38 +3,33 @@
  */
 (function(){
     var app = angular
-        .module("FormApp", ["ngRoute"])
-        .controller("TestController", testController)
+        .module("FormBuilderApp", ["ngRoute"])
+        .controller("NavController", function($scope, $location) {
+            $scope.$location = $location;
+        })
         .config(function ($routeProvider){
             $routeProvider
                 .when("/", {
-                    templateUrl : "views//home/home.view.html"
-                })
-                .when("/home", {
-                    templateUrl : "views//home/home.view.html"
+                    templateUrl : "views/home/home.view.html"
                 })
                 .when("/profile", {
                     templateUrl : "views/users/profile.view.html"
                 })
                 .when("/admin", {
-                    templateUrl : "views//admin/admin.view.html"
+                    templateUrl : "views/admin/admin.view.html"
                 })
                 .when("/forms", {
-                    templateUrl : "views//forms/forms.view.html"
+                    templateUrl : "views/forms/forms.view.html"
                 })
                 .when("/register", {
-                    templateUrl : "views//users/register.view.html"
+                    templateUrl : "views/users/register.view.html"
                 })
                 .when("/login", {
-                    templateUrl : "views//users/login.view.html"
+                    templateUrl : "views/users/login.view.html"
                 })
                 .otherwise({
                     redirectTo: "/"
                 });
     });
-
-    function testController($scope) {
-        $scope.home = "Testing angular";
-    }
 
 })();
