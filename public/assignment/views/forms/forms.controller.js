@@ -2,5 +2,11 @@
  * Created by Ashish on 3/3/2016.
  */
 (function() {
-    console.log("this is form controller");
+    angular
+        .module("FormBuilderApp")
+        .controller("FormsController", FormsController)
+
+    function FormsController($scope){
+        console.log("this is FormsController");
+    }
 })();

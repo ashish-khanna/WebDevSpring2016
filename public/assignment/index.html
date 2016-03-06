@@ -18,9 +18,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular-route.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="views/main/main.controller.js"></script>
+    <script src="views/admin/admin.controller.js"></script>
+    <script src="views/forms/forms.controller.js"></script>
+    <script src="views/header/header.controller.js"></script>
+    <script src="views/home/home.controller.js"></script>
+    <script src="views/sidebar/sidebar.controller.js"></script>
+    <script src="views/users/login.controller.js"></script>
+    <script src="views/users/profile.controller.js"></script>
+    <script src="views/users/register.controller.js"></script>
 </head>
 
-<body>
+<body ng-controller="MainController">
 
 <nav class="navbar navbar-inverse navbar-fixed-top" ng-include="'views/header/header.view.html'" >
 </nav>
@@ -28,6 +38,7 @@
 <div class="container-fluid">
     <div class="row">
         <div ng-include="'views/sidebar/sidebar.view.html'"></div>
+
         <!-- View Template will load here-->
         <div ng-view>
         </div>

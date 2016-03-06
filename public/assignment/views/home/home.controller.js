@@ -2,5 +2,11 @@
  * Created by Ashish on 3/3/2016.
  */
 (function() {
-    console.log("this is home controller");
+    angular
+        .module("FormBuilderApp")
+        .controller("HomeController", HomeController)
+
+    function HomeController($scope){
+        console.log("this is HomeController");
+    }
 })();

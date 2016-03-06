@@ -2,5 +2,11 @@
  * Created by Ashish on 3/3/2016.
  */
 (function() {
-    console.log("this is users controller");
+    angular
+        .module("FormBuilderApp")
+        .controller("RegisterController", RegisterController)
+
+    function RegisterController($scope){
+        console.log("This is RegisterController");
+    }
 })();
