@@ -29,7 +29,8 @@
             findAllUsers : findAllUsers,
             createUser : createUser,
             deleteUserById : deleteUserById,
-            updateUser : updateUser
+            updateUser : updateUser,
+            getMaxId : getMaxId
         };
 
         return service;
@@ -43,18 +44,24 @@
                     foundUser = u;
                 }
             }
-            return foundUser;
+            if (typeof callback === "function") {
+                callback(foundUser);
+            }
         }
 
         function findAllUsers(callback)
         {
-            return users;
+            callback(users);
         }
 
         function createUser(user, callback)
         {
-            users.push(user);
-            return users;
+            user._id = getMaxId();
+            users.push(user)
+
+            if (typeof callback === "function") {
+                callback(user);
+            }
         }
 
         function deleteUserById(userId, callback)
@@ -65,7 +72,19 @@
                     users.splice(i,1);
                 }
             }
-            return false;
+            if (typeof callback === "function") {
+                callback(users);
+            }
+        }
+
+        function findUserById(userId){
+            for (var index in users){
+                var user = users[index];
+                if(userId == user._id){
+                    return user;
+                }
+            }
+            return null;
         }
 
         function updateUser(userId, user, callback)
@@ -77,8 +96,20 @@
                 }
             }
 
-            return users;
+            if (typeof callback === "function") {
+                callback(user);
+            }
         }
 
+        function getMaxId(callback){
+            var id = -1;
+            for (var i = 0; i < users.length; i++) {
+                var u = users[i];
+                if(id < parseInt(u._id)){
+                   id = parseInt(u._id);
+                }
+            }
+            return (id + 1);
+        }
     }
 })();

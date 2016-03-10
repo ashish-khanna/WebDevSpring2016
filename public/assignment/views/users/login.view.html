@@ -1,16 +1,16 @@
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-controller="LoginController">
             <h1 class="page-header">Login</h1>
             <form class="form-horizontal">
                 <div class="form-group">
                     <label for="inputUserName" class="col-sm-2 control-label">Username :</label>
                     <div class="col-sm-7">
-                        <input type="text" class="form-control" id="inputUserName" placeholder="Enter Password">
+                        <input type="text" class="form-control" id="inputUserName" ng-model="user.username" placeholder="Enter Username">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="inputPassword" class="col-sm-2 control-label">Password :</label>
                     <div class="col-sm-7">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Enter Password">
+                        <input type="password" class="form-control" id="inputPassword" ng-model="user.password" placeholder="Enter Password">
                     </div>
                 </div>
                 <div class="form-group">
@@ -24,7 +24,8 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" ng-click="login(user)" class="btn btn-primary">Login</button>
+                        {{errorMsg}}
                     </div>
                 </div>
             </form>
