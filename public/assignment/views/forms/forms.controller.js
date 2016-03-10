@@ -1,7 +1,7 @@
 /**
  * Created by Ashish on 3/3/2016.
  */
-
+'use strict';
 (function() {
     angular
         .module("FormBuilderApp")
@@ -31,7 +31,7 @@
         };
 
         function addForm (form){
-            FormService.createFormForUser($rootScope.user._id,form,
+            FormService.createFormForUser($rootScope.currentUser._id,form,
                 function(response){
                     var newForm = response;
                     $scope.forms.push(newForm);
