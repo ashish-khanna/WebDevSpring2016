@@ -76,7 +76,7 @@ module.exports = function() {
             if (mock[f]._id == formId) {
                 for (var i = 0; i < mock[f].fields.length; i++) {
                     if (mock[f].fields[i]._id == fieldId) {
-                        return mock[f].fields[i]._id;
+                        return mock[f].fields[i];
                     }
                 }
             }
