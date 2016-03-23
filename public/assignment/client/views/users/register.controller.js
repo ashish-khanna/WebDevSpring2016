@@ -10,11 +10,14 @@
     function RegisterController($scope, $location, $rootScope, UserService){
         $scope.registerUser = function(user){
             console.log("user data -" + user);
-            UserService.createUser(user, function(response){
-                $rootScope.currentUser = response;
-                //console.log($rootScope.user._id+", "+$rootScope.user.username+", "+$rootScope.user.email);
+            UserService.createUser(user)
+                .then(function(response){
+                    if(response){
+                        UserService.setUser(response.data);
+                        $location.url("/profile");
+                    }
             });
-            $location.url("/profile");
+
         }
     }
 })();

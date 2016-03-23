@@ -1,116 +1,119 @@
-/**
- * Created by Ashish on 3/6/2016.
- */
 'use strict';
-(function()
-{
+(function() {
     angular
         .module("FormBuilderApp")
         .factory("UserService", UserService);
 
-    function UserService()
-    {
-        var users = [];
-        users = [
-            {	"_id":123, "firstName":"Alice",            "lastName":"Wonderland",
-                "username":"alice",  "password":"alice",   "roles": ["student"]		},
-            {	"_id":234, "firstName":"Bob",              "lastName":"Hope",
-                "username":"bob",    "password":"bob",     "roles": ["admin"]		},
-            {	"_id":345, "firstName":"Charlie",          "lastName":"Brown",
-                "username":"charlie","password":"charlie", "roles": ["faculty"]		},
-            {	"_id":456, "firstName":"Dan",              "lastName":"Craig",
-                "username":"dan",    "password":"dan",     "roles": ["faculty", "admin"]},
-            {	"_id":567, "firstName":"Edward",           "lastName":"Norton",
-                "username":"ed",     "password":"ed",      "roles": ["student"]		}
-        ]
+    function UserService($http, $rootScope, $q) {
 
-
-        var service = {
-            findUserByCredentials : findUserByCredentials,
-            findAllUsers : findAllUsers,
-            createUser : createUser,
-            deleteUserById : deleteUserById,
-            updateUser : updateUser,
-            getMaxId : getMaxId
+        var api = {
+            findUserByUsername: findUserByUsername,
+            findUserByCredentials: findUserByCredentials,
+            findAllUsers: findAllUsers,
+            createUser: createUser,
+            deleteUserById: deleteUserById,
+            updateUser: updateUser,
+            findUserById: findUserById,
+            setUser: setUser,
+            logout: logout
         };
+        return api;
 
-        return service;
-
-        function findUserByCredentials(username, password, callback)
-        {
-            var foundUser = null;
-            for (var i = 0; i < users.length; i++) {
-                var u = users[i];
-                if (u.username == username && u.password == password) {
-                    foundUser = u;
-                }
-            }
-            if (typeof callback === "function") {
-                callback(foundUser);
-            }
+        function findUserByUsername(username){
+            var deferred = $q.defer();
+            $http.get("/api/assignment/user?username="+username)
+                .then(
+                    function(response) {
+                        deferred.resolve(response.data);
+                    },
+                    function(error) {
+                        deferred.reject(error);
+                    }
+                );
+            return deferred.promise;
         }
 
-        function findAllUsers(callback)
-        {
-            callback(users);
+        function findUserByCredentials(username, password) {
+            console.log("in userservice findUserByCredentials");
+            var deferred = $q.defer();
+
+            $http.get("/api/assignment/user?username="+username+"&password="+password)
+                .then(
+                    function(response) {
+                        deferred.resolve(response.data);
+                    },
+                    function(error) {
+                        deferred.reject(error);
+                    }
+                );
+            return deferred.promise;
         }
 
-        function createUser(user, callback)
-        {
-            user._id = getMaxId();
-            users.push(user)
-
-            if (typeof callback === "function") {
-                callback(user);
-            }
+        function findAllUsers() {
+            var deferred = $q.defer();
+            $http.get("/api/assignment/user")
+                .then(
+                    function(response){
+                        deferred.resolve(response.data);
+                    },
+                    function(error) {
+                        deferred.reject(error);
+                    }
+                );
+            return deferred.promise;
         }
 
-        function deleteUserById(userId, callback)
-        {
-            for (var i = 0; i < users.length; i++) {
-                var u = users[i];
-                if (u._id == userId) {
-                    users.splice(i,1);
-                }
-            }
-            if (typeof callback === "function") {
-                callback(users);
-            }
+        function createUser(user) {
+            var deferred = $q.defer();
+            $http.post("/api/assignment/user",user)
+                .success(function (response){
+                    deferred.resolve(response);
+                });
+            return deferred.promise;
+        }
+
+        function deleteUserById(userId) {
+            var deferred = $q.defer();
+            $http.delete("/api/assignment/user/"+userId)
+                .success(
+                    function(response){
+                        deferred.resolve(response);
+                    }
+                );
+            return deferred.promise;
         }
 
         function findUserById(userId){
-            for (var index in users){
-                var user = users[index];
-                if(userId == user._id){
-                    return user;
-                }
-            }
-            return null;
+            var deferred = $q.defer();
+            $http.get("/api/assignment/user/"+userId)
+                .then(
+                    function(response){
+                        deferred.resolve(response);
+                    },
+                    function(error){
+                        deferred.reject(error);
+                    }
+                );
+            return deferred.promise;
         }
 
-        function updateUser(userId, user, callback)
-        {
-            for (var i = 0; i < users.length; i++) {
-                var u = users[i];
-                if (u._id == userId) {
-                    users[i] = user;
-                }
-            }
-
-            if (typeof callback === "function") {
-                callback(user);
-            }
+        function updateUser(userId, newUser) {
+            var deferred = $q.defer();
+            $http.put("/api/assignment/user/"+userId, newUser)
+                .success(function (response) {
+                    deferred.resolve(response);
+                });
+            return deferred.promise;
         }
 
-        function getMaxId(callback){
-            var id = -1;
-            for (var i = 0; i < users.length; i++) {
-                var u = users[i];
-                if(id < parseInt(u._id)){
-                   id = parseInt(u._id);
-                }
-            }
-            return (id + 1);
+        function setUser(newUser) {
+            $rootScope.user = newUser;
+        }
+
+        function logout() {
+            $rootScope.user = null;
+            console.log("in logout");
+            console.log($rootScope.user);
         }
     }
 })();

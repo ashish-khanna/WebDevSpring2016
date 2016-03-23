@@ -1,30 +1,29 @@
-/**
- * Created by Ashish on 3/3/2016.
- */
 'use strict';
-(function() {
+
+(function (){
     angular
         .module("FormBuilderApp")
-        .controller("LoginController", LoginController)
+        .controller("LoginController",LoginController);
 
-    function LoginController($scope, $location, $rootScope, UserService){
-        console.log("This is LoginController");
+    function LoginController($rootScope,$scope,$location,UserService){
+        //console.log("Hello from login controller!");
         $scope.login = login;
 
         function login(user){
-            UserService.findUserByCredentials(user.username,user.password,
-                function(response){
-                    $rootScope.currentUser = response;
-                    //console.log($rootScope.user._id+", "+$rootScope.user.username+", "+$rootScope.user.email);
-                }
-            )
-            if($rootScope.currentUser){
-                $location.path('/profile');
-            }
-            else{
-                $scope.errorMsg = "Invalid User";
-            }
-
+            UserService
+                .findUserByCredentials(user.username,user.password)
+                .then(
+                    function(doc){
+                        var user = doc;
+                        if(user){
+                            UserService.setUser(doc);
+                            $location.url("/profile");
+                        }
+                        else{
+                            $scope.errorMsg = "Invalid User";
+                        }
+                    }
+                )
         }
-    }
+    };
 })();

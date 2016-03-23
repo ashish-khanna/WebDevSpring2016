@@ -9,16 +9,16 @@
 
     function ProfileController($scope, $routeParams, $rootScope, UserService){
         console.log("This is ProfileController");
-        //var u = $routeParams.id;
-        //console.log(u);
-        console.log($rootScope.currentUser);
+        console.log($rootScope.user);
 
         $scope.update = update;
 
         function update(newUser) {
-            UserService.updateUser(newUser._id, newUser,
-                function (response) {
-                    $rootScope.currentUser = response;
+            UserService.updateUser(newUser._id, newUser)
+                .then(function (response) {
+                    if (response.data) {
+                        UserService.setUser(response.data);
+                     }
                 }
             )
         };

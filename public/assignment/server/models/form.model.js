@@ -2,9 +2,10 @@
  * Created by Ashish on 3/19/2016.
  */
 var mock = require("./form.mock.json");
-var fieldTemplates = require("./field-templates.mock.json");
+var uuid = require('node-uuid');
+//var fieldTemplates = require("./field-templates.mock.json");
 
-module.exports = function(uuid) {
+module.exports = function() {
 
     function findFormByTitle(title) {
         for (var f in mock) {
@@ -58,7 +59,7 @@ module.exports = function(uuid) {
                 break;
             }
         }
-        return mock;
+        return form;
     }
 
     function getFieldsForForm(formId) {

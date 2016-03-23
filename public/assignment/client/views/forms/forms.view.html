@@ -39,7 +39,8 @@
                         </tr>
                         <tr ng-repeat="form in forms"
                             ng-class="{'success' : $index == selectedFormIndex}">
-                            <td>{{form.title}}</td>
+                            <td><a href="#/form/{{form._id}}/fields" ng-click="setFormTitle(form.title)">
+                                {{form.title}}</a></td>
                             <td>
                                 <button ng-click="deleteForm($index)"
                                         class="btn btn-small btn-link">
@@ -53,6 +54,11 @@
                         </tr>
                         </tbody>
                     </table>
+
+                    <div role="tabpanel" class="tab-pane" id="form-fields">
+
+                    </div>
+
                 </div>
 
 
