@@ -1,0 +1,61 @@
+    <div class="container-fluid" ng-Controller="HeaderController">
+        <div class="col-md-2"><span class="app-logo">WHAM</span></div>
+        <div class="col-md-4">
+            <div class="input-group search-controls" id="adv-search"
+                 style="width: 345px;">
+                <input type="text" class="form-control" ng-model="query"
+                       placeholder="Enter Keywords" />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                <span class="caret"></span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu"
+                                 style="min-width: 345px;">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label for="filter">Category</label> <select
+                                            class="form-control" ng-model="selectCategory"
+                                            ng-options="category as category.text for category in categories">
+                                    </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contain">Location</label> <input
+                                            class="form-control" ng-model="city" type="text" googleplace />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary"
+                                            ng-click=advancedSearch(selectCategory)
+                                            >
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit"
+                                ng-click=getEvent(query) >
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-show="!currentUser"><a href="#/login"><i
+                        class="fa fa-sign-in"></i> Login</a></li>
+                <li ng-show="currentUser" ng-click="logout()"><a href="#login"><i
+                        class="fa fa-sign-out"></i> Log Out</a></li>
+                <li><a href="#landing"><i class="fa fa-home"></i> Home</a></li>
+                <li ng-show="currentUser"><a href="#myEvents"><i
+                        class="fa fa-child"></i> My Events</a></li>
+                <li ng-show="currentUser"><a href="#stuff"><i
+                        class="fa fa-diamond"></i></i> My Stuff</a></li>
+                <li ng-show="currentUser"><a href="#history"><i
+                        class="fa fa-history"></i></i> History</a></li>
+                <li><a href="#contact"><i class="fa fa-comment"></i>
+                    Contact</a></li>
+            </ul>
+        </div>
+    </div>
