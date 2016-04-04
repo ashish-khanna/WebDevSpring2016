@@ -25,9 +25,9 @@
                     function(doc){
                         vm.events = doc;
                         $scope.events = vm.events;
+
                     }
                 )
         }
-
     }
 })();

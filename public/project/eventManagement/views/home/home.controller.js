@@ -6,12 +6,11 @@
         .module("EventApp")
         .controller("HomeController", HomeController)
 
-    function HomeController($rootScope, $scope, $location) {
+    function HomeController($rootScope, $scope, $location, EventService) {
         console.log("HomeController");
         var vm = this;
 
         $scope.getCurrentPosition = getCurrentPosition;
-
 
         function getCurrentPosition(){
             if(navigator.geolocation){
@@ -48,7 +47,7 @@
         }
 
         var mapOptions = {
-            zoom: 8,
+            zoom: 13,
             center: new google.maps.LatLng(42.364506, -71.038887),
             mapTypeId: google.maps.MapTypeId.TERRAIN,
         }
@@ -61,15 +60,15 @@
         var createMarker = function (info) {
             var marker = new google.maps.Marker({
                 map: $scope.map,
-                position: new google.maps.LatLng(info.lat, info.long),
-                title: info.city,
+                position: new google.maps.LatLng(info.venue.latitude, info.venue.longitude),
+                title: info.name.text,
                 animation: "Animation.BOUNCE",
                 icon: "https://upload.wikimedia.org/wikipedia/commons/9/92/Map_marker_icon_%E2%80%93_Nicolas_Mollet_%E2%80%93_Home_%E2%80%93_People_%E2%80%93_Default.png"
             });
-            marker.content = '<div class="infoWindowContent">' + info.desc + '</div>';
+            marker.content = '<div class="infoWindowContent">' + info.venue.name + '</div>';
 
             google.maps.event.addListener(marker, 'click', function () {
-                infoWindow.setContent('<h2>' + marker.title + '</h2>' + marker.content);
+                infoWindow.setContent('<a href="/login"><h4 style="color:#3B5998">' + marker.title + '</h4></a>' + marker.content);
                 infoWindow.open($scope.map, marker);
             });
 
@@ -77,48 +76,21 @@
 
         }
 
-        var cities = [
-            {
-                city: 'Boston',
-                desc: 'This is the best city in the world!',
-                lat: 42.364506,
-                long: -71.038887
-            },
-            {
-                city: 'Toronto',
-                desc: 'This is the best city in the world!',
-                lat: 43.7000,
-                long: -79.4000
-            },
-            {
-                city: 'New York',
-                desc: 'This city is aiiiiite!',
-                lat: 40.6700,
-                long: -73.9400
-            },
-            {
-                city: 'Chicago',
-                desc: 'This is the second best city in the world!',
-                lat: 41.8819,
-                long: -87.6278
-            },
-            {
-                city: 'Los Angeles',
-                desc: 'This city is live!',
-                lat: 34.0500,
-                long: -118.2500
-            },
-            {
-                city: 'Las Vegas',
-                desc: 'Sin City...\'nuff said!',
-                lat: 36.0800,
-                long: -115.1522
-            }
-        ];
+        function getPopularEvent(){
+            EventService.searchEvent(event)
+                .then(
+                    function(doc){
+                        vm.events = doc.events;
+                        for (i = 0; i < vm.events.length; i++) {
+                            console.log(vm.events[i].venue);
+                            createMarker(vm.events[i]);
 
-        for (i = 0; i < cities.length; i++) {
-            createMarker(cities[i]);
+                        }
+                    }
+                )
         }
+
+        getPopularEvent();
 
         $scope.openInfoWindow = function (e, selectedMarker) {
             e.preventDefault();
