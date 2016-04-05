@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d0008aba-a59c-4f8e-8229-42558008a640" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project/eventManagement/services/event.service.client.js" afterPath="$PROJECT_DIR$/public/project/eventManagement/services/event.service.client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project/eventManagement/views/header/header.controller.js" afterPath="$PROJECT_DIR$/public/project/eventManagement/views/header/header.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project/eventManagement/views/header/header.view.html" afterPath="$PROJECT_DIR$/public/project/eventManagement/views/header/header.view.html" />
     </list>
     <ignored path="WebDevSp16.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -844,7 +841,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459888460493</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Event Details Page - Google Map Integrated - v1">
+      <created>1459891127041</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1459891127042</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -858,7 +861,7 @@
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43238732" sideWeight="0.76578563" order="10" side_tool="true" content_ui="tabs" x="12" y="534" width="1362" height="168" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43238732" sideWeight="0.2342144" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.74958265" sideWeight="0.76578563" order="2" side_tool="true" content_ui="tabs" x="9" y="259" width="1348" height="209" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43238732" sideWeight="0.76578563" order="2" side_tool="true" content_ui="tabs" x="9" y="259" width="1348" height="209" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5051852" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -884,7 +887,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Admin Page" />
     <MESSAGE value="Minor changes to Admin Page" />
     <MESSAGE value="Fixing Fields HTML + Home Page" />
     <MESSAGE value="assignment1" />
@@ -909,7 +911,8 @@
     <MESSAGE value="Google Map and Eventbrite API fix" />
     <MESSAGE value="Event Details Page" />
     <MESSAGE value="Event Details Page - Google Map Integrated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Event Details Page - Google Map Integrated" />
+    <MESSAGE value="Event Details Page - Google Map Integrated - v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Event Details Page - Google Map Integrated - v1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
