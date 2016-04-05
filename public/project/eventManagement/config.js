@@ -23,6 +23,10 @@
                     templateUrl: "views/user/contact.view.html",
                     controller: "ContactController"
                 })
+                .when("/eventDetail/:event", {
+                    templateUrl: "views/event/eventDetail.view.html",
+                    controller: "EventController"
+                })
                 .otherwise({
                     redirectTo: "/"
                 })

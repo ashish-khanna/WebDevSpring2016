@@ -9,7 +9,7 @@
 
     function HeaderController($scope, $rootScope, EventService){
         console.log("this is HeaderController");
-        var vm = this;
+        var vm = this
 
         $scope.logout = logout;
         $scope.getEvent = getEvent;

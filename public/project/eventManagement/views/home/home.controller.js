@@ -11,6 +11,12 @@
         var vm = this;
 
         $scope.getCurrentPosition = getCurrentPosition;
+        $scope.showDetail = showDetail;
+
+        function showDetail(event){
+            console.log("this is event");
+            console.log(event);
+        }
 
         function getCurrentPosition(){
             if(navigator.geolocation){
@@ -67,8 +73,9 @@
             });
             marker.content = '<div class="infoWindowContent">' + info.venue.name + '</div>';
 
+            var et = info.id;
             google.maps.event.addListener(marker, 'click', function () {
-                infoWindow.setContent('<a href="/login"><h4 style="color:#3B5998">' + marker.title + '</h4></a>' + marker.content);
+                infoWindow.setContent('<a href="#/eventDetail/'+et+'"><h4 style="color:#3B5998">' + marker.title + '</h4></a>' + marker.content);
                 infoWindow.open($scope.map, marker);
             });
 
