@@ -42,6 +42,7 @@
                         vm.events = doc;
                         $scope.events = vm.events;
                         console.log(vm.events);
+                        console.log(vm.events);
                     }
                 )
         }
