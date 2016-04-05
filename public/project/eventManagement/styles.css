@@ -74,7 +74,8 @@ footer {
 }
 
 .comment-box {
-    #dv1 { border:1pxsolid#DBDCE9;
+    #dv1 {
+           border:1px solid #DBDCE9;
            margin-right: auto;
            width: 70%;
            margin-left: 15px;
@@ -238,6 +239,11 @@ body {
 #map {
     height:380px;
 }
+
+#eventMap {
+    height:280px;
+}
+
 .infoWindowContent {
     font-size:  14px !important;
     border-top: 1px solid #ccc;
