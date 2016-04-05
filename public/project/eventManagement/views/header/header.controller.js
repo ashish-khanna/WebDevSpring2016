@@ -13,19 +13,35 @@
 
         $scope.logout = logout;
         $scope.getEvent = getEvent;
+        $scope.categories = [ {
+            value : '1',
+            text : 'Music'
+        }, {
+            value : '2',
+            text : 'Travel & Outdoor'
+        }, {
+            value : '3',
+            text : 'Food & Drink'
+        }, {
+            value : '4',
+            text : 'Seasonal & Holiday'
+        }, {
+            value : '6',
+            text : 'Science & Technology'
+        } ];
 
         function logout() {
             $rootScope.currentUser = null;
             $location.url("/");
         }
 
-        function getEvent(event){
-            EventService.searchEvent(event)
+        function getEvent(query){
+            EventService.getEventByQuery(query)
                 .then(
                     function(doc){
                         vm.events = doc;
                         $scope.events = vm.events;
-
+                        console.log(vm.events);
                     }
                 )
         }

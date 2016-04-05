@@ -10,7 +10,8 @@
     function EventService($q, $http) {
         var api = {
             searchEvent: searchEvent,
-            getEventById: getEventById
+            getEventById: getEventById,
+            getEventByQuery: getEventByQuery
         };
 
         return api;
@@ -20,10 +21,27 @@
             var deferred = $q.defer();
             $http({
                 method: 'GET',
-                //https://www.eventbriteapi.com/v3/events/search/?expand=venue&token=
                 url: 'https://www.eventbriteapi.com/v3/events/search/?expand=venue&location.latitude=42.35&location.longitude=-71.06&location.within=10mi',
                 params: {
                     //q: event,
+                    token: 'IVT43S2BSWC525YQGO4S'
+                }
+            }).success(function (response) {
+                    var a = response;
+                    console.log(a);
+                    deferred.resolve(response);
+                }
+            );
+            return deferred.promise;
+        }
+
+        function getEventByQuery(query) {
+            var deferred = $q.defer();
+            $http({
+                method: 'GET',
+                url: 'https://www.eventbriteapi.com/v3/events/search/?expand=venue',
+                params: {
+                    q: query,
                     token: 'IVT43S2BSWC525YQGO4S'
                 }
             }).success(function (response) {
