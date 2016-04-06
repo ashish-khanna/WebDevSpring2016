@@ -89,9 +89,7 @@
                     function(doc){
                         vm.events = doc.events;
                         for (i = 0; i < vm.events.length; i++) {
-                            console.log(vm.events[i].venue);
-                            createMarker(vm.events[i]);
-
+                              createMarker(vm.events[i]);
                         }
                     }
                 )

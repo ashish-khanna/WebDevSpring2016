@@ -7,7 +7,7 @@
         .module("EventApp")
         .controller("HeaderController", HeaderController)
 
-    function HeaderController($scope, $rootScope, EventService){
+    function HeaderController($scope, $rootScope, $location, EventService){
         console.log("this is HeaderController");
         var vm = this
 
@@ -36,15 +36,7 @@
         }
 
         function getEvent(query){
-            EventService.getEventByQuery(query)
-                .then(
-                    function(doc){
-                        vm.events = doc;
-                        $scope.events = vm.events;
-                        console.log(vm.events);
-                        console.log(vm.events);
-                    }
-                )
+            $location.url("/eventList/"+query);
         }
     }
 })();

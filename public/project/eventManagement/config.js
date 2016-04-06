@@ -27,6 +27,10 @@
                     templateUrl: "views/event/eventDetail.view.html",
                     controller: "EventController"
                 })
+                .when("/eventList/:key", {
+                    templateUrl: "views/event/eventList.view.html",
+                    controller: "EventListController"
+                })
                 .otherwise({
                     redirectTo: "/"
                 })

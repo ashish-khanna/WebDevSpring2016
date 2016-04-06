@@ -244,6 +244,10 @@ body {
     height:280px;
 }
 
+#eEvent {
+    height:280px;
+}
+
 .infoWindowContent {
     font-size:  14px !important;
     border-top: 1px solid #ccc;
