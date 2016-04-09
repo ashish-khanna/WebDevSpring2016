@@ -41,7 +41,6 @@
         init();
 
         function createMarker(record){
-//            if(record.venue != null && record.venue.latitude != null && record.venue.longitude != null){
                 var marker = new google.maps.Marker({
                     map: $scope.map,
                     position: new google.maps.LatLng(record.venue.latitude, record.venue.longitude),
@@ -50,7 +49,6 @@
                     icon: "https://upload.wikimedia.org/wikipedia/commons/9/92/Map_marker_icon_%E2%80%93_Nicolas_Mollet_%E2%80%93_Home_%E2%80%93_People_%E2%80%93_Default.png"
                 });
             $scope.map.setCenter(marker.getPosition());
-//            }
         }
     }
 })();

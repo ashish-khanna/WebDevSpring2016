@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0008aba-a59c-4f8e-8229-42558008a640" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/project/eventManagement/views/event/myFavouriteEvents.controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/project/eventManagement/views/event/myFavouriteEvents.view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/project/eventManagement/views/user/userpreference.controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/project/eventManagement/views/user/userpreference.view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project/eventManagement/config.js" afterPath="$PROJECT_DIR$/public/project/eventManagement/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project/eventManagement/index.html" afterPath="$PROJECT_DIR$/public/project/eventManagement/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project/eventManagement/services/event.service.client.js" afterPath="$PROJECT_DIR$/public/project/eventManagement/services/event.service.client.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.controller.js" afterPath="$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.view.html" afterPath="$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project/eventManagement/views/header/header.view.html" afterPath="$PROJECT_DIR$/public/project/eventManagement/views/header/header.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project/eventManagement/views/event/myFavouriteEvents.controller.js" afterPath="$PROJECT_DIR$/public/project/eventManagement/views/event/myFavouriteEvents.controller.js" />
     </list>
     <ignored path="WebDevSp16.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,21 +99,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myFavouriteEvents.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myFavouriteEvents.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/project/eventManagement/views/event/myFavouriteEvents.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5514512">
-              <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eventList.controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="eventList.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="55" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.7308707">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -207,8 +197,8 @@
         <option value="$PROJECT_DIR$/public/project/eventManagement/index.html" />
         <option value="$PROJECT_DIR$/public/project/eventManagement/config.js" />
         <option value="$PROJECT_DIR$/public/project/eventManagement/views/header/header.view.html" />
-        <option value="$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.controller.js" />
         <option value="$PROJECT_DIR$/public/project/eventManagement/views/event/myFavouriteEvents.controller.js" />
+        <option value="$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.controller.js" />
       </list>
     </option>
   </component>
@@ -961,7 +951,13 @@
       <option name="project" value="LOCAL" />
       <updated>1459927132671</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="User Preference Page + Favourite Events display">
+      <created>1460244552341</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1460244552341</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1001,7 +997,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="assignment1" />
     <MESSAGE value="assignment2" />
     <MESSAGE value="Git Hub Repo Link updated" />
     <MESSAGE value="Structure change for Assignment 2" />
@@ -1026,7 +1021,8 @@
     <MESSAGE value="Event Details Page - Google Map Integrated - v1" />
     <MESSAGE value="Event Details Page - Google Map Integrated - v2" />
     <MESSAGE value="Event Details Page - Google Map Integrated - v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Event Details Page - Google Map Integrated - v3" />
+    <MESSAGE value="User Preference Page + Favourite Events display" />
+    <option name="LAST_COMMIT_MESSAGE" value="User Preference Page + Favourite Events display" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1480,21 +1476,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.controller.js">
+    <entry file="file://$PROJECT_DIR$/public/project/eventManagement/views/event/myFavouriteEvents.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="55" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/project/eventManagement/views/event/myFavouriteEvents.controller.js">
+    <entry file="file://$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5514512">
-          <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
-          <folding />
+        <state vertical-scroll-proportion="0.7308707">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
