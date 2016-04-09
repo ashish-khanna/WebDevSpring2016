@@ -4,20 +4,20 @@
 (function() {
     angular
         .module("EventApp")
-        .controller("EventListController", EventListController)
+        .controller("FavouriteEventController", FavouriteEventController)
 
-    function EventListController($rootScope, $scope, $location, $routeParams, EventService) {
+    function FavouriteEventController($rootScope, $scope, $location, $routeParams, EventService) {
         $scope.showSpinner = true;
         $scope.basicSearchRecords = [];
         $scope.markers = [];
-        $scope.createMarker = createMarker;
+        $scope.createMarker = createMarker
 
         var vm = this;
         console.log("Inside Event List");
-        var key = $routeParams.key;
+        var subCategories = $rootScope.currentUser.preference.toString();
 
         function init(){
-            EventService.getEventByQuery(key)
+            EventService.getEventBySubCategories(subCategories)
                 .then(
                     function(doc){
                         $scope.currentPage = 1;
@@ -44,6 +44,7 @@
 //            if(record.venue != null && record.venue.latitude != null && record.venue.longitude != null){
                 var marker = new google.maps.Marker({
                     map: $scope.map,
+                    center: new google.maps.LatLng(record.venue.latitude, record.venue.longitude),
                     position: new google.maps.LatLng(record.venue.latitude, record.venue.longitude),
                     title: record.name.text,
                     animation: "Animation.BOUNCE",

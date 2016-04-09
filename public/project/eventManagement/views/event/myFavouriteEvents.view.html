@@ -1,4 +1,4 @@
-<div class="container" ng-Controller="EventListController">
+<div class="container" ng-Controller="FavouriteEventController">
     <div class="row">
         <div ng-show = 'noResults' class='col-md-6'>
             <p style="padding: 30px; font-size: x-large;"><i class="fa fa-exclamation-triangle"></i> Sorry, no events found.</p>
@@ -15,9 +15,6 @@
             <div style="overflow:auto; height:590px;">
                 <ul class="list-group">
                     <li class="list-group-item" ng-repeat ="record in basicSearchRecords | filter:q">
-                    <!--    dir-paginate="record in basicSearchRecords | itemsPerPage: pageSize"
-                        current-page="currentPage"-->
-
                             <div class="row">
                                 <a href="#/eventDetail/{{record.id}}">
 

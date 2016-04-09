@@ -31,6 +31,14 @@
                     templateUrl: "views/event/eventList.view.html",
                     controller: "EventListController"
                 })
+                .when("/myFavouriteEvent", {
+                    templateUrl: "views/event/eventList.view.html",
+                    controller: "EventListController"
+                })
+                .when("/mypreference", {
+                    templateUrl: "views/user/userpreference.view.html",
+                    controller: "UserPreferenceController"
+                })
                 .otherwise({
                     redirectTo: "/"
                 })

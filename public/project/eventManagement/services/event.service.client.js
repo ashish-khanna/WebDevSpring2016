@@ -11,7 +11,8 @@
         var api = {
             searchEvent: searchEvent,
             getEventById: getEventById,
-            getEventByQuery: getEventByQuery
+            getEventByQuery: getEventByQuery,
+            getEventBySubCategories: getEventBySubCategories
         };
 
         return api;
@@ -35,6 +36,8 @@
             return deferred.promise;
         }
 
+
+
         function getEventByQuery(query) {
             var deferred = $q.defer();
             $http({
@@ -42,6 +45,24 @@
                 url: 'https://www.eventbriteapi.com/v3/events/search/?expand=venue',
                 params: {
                     q: query,
+                    token: 'IVT43S2BSWC525YQGO4S'
+                }
+            }).success(function (response) {
+                    var a = response;
+                    console.log(a);
+                    deferred.resolve(response);
+                }
+            );
+            return deferred.promise;
+        }
+
+        function getEventBySubCategories(query) {
+            var deferred = $q.defer();
+            $http({
+                method: 'GET',
+                url: 'https://www.eventbriteapi.com/v3/events/search/?expand=venue',
+                params: {
+                    subcategories: query,
                     token: 'IVT43S2BSWC525YQGO4S'
                 }
             }).success(function (response) {
