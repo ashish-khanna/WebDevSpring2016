@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d0008aba-a59c-4f8e-8229-42558008a640" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.controller.js" afterPath="$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project/eventManagement/views/event/myFavouriteEvents.controller.js" afterPath="$PROJECT_DIR$/public/project/eventManagement/views/event/myFavouriteEvents.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="WebDevSp16.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,16 +88,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="phrase.rnc" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/phrase.rnc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="myFavouriteEvents.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/project/eventManagement/views/event/myFavouriteEvents.controller.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -109,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eventList.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="eventList.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7308707">
+            <state vertical-scroll-proportion="0.0">
               <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
@@ -121,11 +110,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event.service.client.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/project/eventManagement/services/event.service.client.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/project/eventManagement/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.762533">
+              <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -188,7 +189,6 @@
         <option value="$PROJECT_DIR$/public/project/eventManagement/views/home/home.controller.js" />
         <option value="$PROJECT_DIR$/public/project/eventManagement/styles.css" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.view.html" />
         <option value="$PROJECT_DIR$/public/project/eventManagement/views/user/userpreference.view.html" />
         <option value="$PROJECT_DIR$/public/project/eventManagement/views/user/userpreference.controller.js" />
@@ -199,6 +199,7 @@
         <option value="$PROJECT_DIR$/public/project/eventManagement/views/header/header.view.html" />
         <option value="$PROJECT_DIR$/public/project/eventManagement/views/event/myFavouriteEvents.controller.js" />
         <option value="$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.controller.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -957,7 +958,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460244552341</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="User Preference Page + Favourite Events display-v2">
+      <created>1460244598867</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1460244598867</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -968,10 +975,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32053423" sideWeight="0.7627119" order="10" side_tool="true" content_ui="tabs" x="12" y="534" width="1362" height="168" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32053423" sideWeight="0.7627119" order="10" side_tool="true" content_ui="tabs" x="12" y="534" width="1362" height="168" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32053423" sideWeight="0.23728813" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27378964" sideWeight="0.7627119" order="2" side_tool="true" content_ui="tabs" x="9" y="259" width="1348" height="209" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32053423" sideWeight="0.7627119" order="2" side_tool="true" content_ui="tabs" x="9" y="259" width="1348" height="209" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5051852" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -997,7 +1004,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="assignment2" />
     <MESSAGE value="Git Hub Repo Link updated" />
     <MESSAGE value="Structure change for Assignment 2" />
     <MESSAGE value="Further structure change for Assignment 2" />
@@ -1022,7 +1028,8 @@
     <MESSAGE value="Event Details Page - Google Map Integrated - v2" />
     <MESSAGE value="Event Details Page - Google Map Integrated - v3" />
     <MESSAGE value="User Preference Page + Favourite Events display" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Preference Page + Favourite Events display" />
+    <MESSAGE value="User Preference Page + Favourite Events display-v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="User Preference Page + Favourite Events display-v2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1255,16 +1262,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/project/eventManagement/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1277,14 +1274,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="56" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1486,11 +1475,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/project/eventManagement/views/event/eventList.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7308707">
+        <state vertical-scroll-proportion="0.0">
           <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/project/eventManagement/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.762533">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
