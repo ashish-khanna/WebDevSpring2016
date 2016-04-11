@@ -1,10 +1,12 @@
 /**
  * Created by Ashish on 3/19/2016.
  */
-module.exports = function(app, uuid) {
-    var userModel = require("./models/user.model.js")(uuid);
-    var formModel = require("./models/form.model.js")(uuid);
+module.exports = function(app, db, mongoose) {
+    var userModel = require("./models/user.model.server.js")(db, mongoose);
+    var formModel = require("./models/form.model.server.js")(db, mongoose);
+    var fieldModel = require("./models/field.model.server.js")(db, mongoose);
+
     var userService = require("./services/user.service.server.js") (app, userModel);
-    var formService = require("./services/form.service.server.js") (app, formModel);
-    var fieldService = require("./services/field.service.server.js") (app, formModel);
+    var formService = require("./services/form.service.server.js") (app, formModel, fieldModel);
+    var fieldService = require("./services/field.service.server.js") (app, formModel, fieldModel);
 };

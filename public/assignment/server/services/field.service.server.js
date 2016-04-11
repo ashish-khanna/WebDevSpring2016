@@ -1,7 +1,7 @@
 /**
  * Created by Ashish on 3/19/2016.
  */
-module.exports = function(app, formModel) {
+module.exports = function(app, formModel, fieldModel) {
     app.get("/api/assignment/form/:formId/field", getFieldsForForm);
     app.get("/api/assignment/form/:formId/field/:fieldId", getFieldForForm);
     app.delete("/api/assignment/form/:formId/field/:fieldId", deleteFieldFromForm);

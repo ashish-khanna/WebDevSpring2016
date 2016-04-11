@@ -1,7 +1,7 @@
 /**
  * Created by Ashish on 3/19/2016.
  */
-module.exports = function(app, formModel) {
+module.exports = function(app, formModel, fieldModel) {
     app.get("/api/assignment/user/:userId/form", findAllFormsForUser);
     app.post("/api/assignment/user/:userId/form", createFormForUser);
     app.get("/api/assignment/form/:formId", findFormById);
