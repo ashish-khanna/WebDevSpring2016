@@ -19,18 +19,18 @@ module.exports = function(db, mongoose) {
 
 
     var api = {
-        findFormByTitle: findFormByTitle,
+        //findFormByTitle: findFormByTitle,
         createFormForUser: createFormForUser,
         findFormById: findFormById,
         findAllFormsForUser: findAllFormsForUser,
         deleteFormById: deleteFormById,
         updateFormById: updateFormById,
         getFieldsForForm: getFieldsForForm,
-        getFieldForForm: getFieldForForm,
-        deleteFieldFromForm: deleteFieldFromForm,
-        createFieldForForm: createFieldForForm,
-        updateField: updateField,
-        getFieldTemplateType: getFieldTemplateType
+        //getFieldForForm: getFieldForForm,
+        //deleteFieldFromForm: deleteFieldFromForm,
+        //createFieldForForm: createFieldForForm,
+        //updateField: updateField,
+        //getFieldTemplateType: getFieldTemplateType
     };
     return api;
 

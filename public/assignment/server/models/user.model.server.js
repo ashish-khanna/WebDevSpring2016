@@ -7,7 +7,7 @@ var uuid = require('node-uuid');
 // load q promise library
 var q = require("q");
 
-module.exports = function(uuid, db, mongoose) {
+module.exports = function(db, mongoose) {
     // load user schema
     var UserSchema = require("./user.schema.server.js")(mongoose);
 
