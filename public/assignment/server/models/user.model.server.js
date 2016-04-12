@@ -66,9 +66,11 @@ module.exports = function(db, mongoose) {
 
             if (err) {
                 // reject promise if error
+                console.log(err);
                 deferred.reject(err);
             } else {
                 // resolve promise
+                console.log(doc);
                 deferred.resolve(doc);
             }
 
@@ -132,10 +134,8 @@ module.exports = function(db, mongoose) {
         return deferred.promise;
     }
 
-    function findUserByCredentials(credentials) {
-        var username = credentials.username;
-        var password = credentials.password
-        var deferred = q.defer();
+    function findUserByCredentials(username, password) {
+       var deferred = q.defer();
 
         // find one user with mongoose user model's findOne()
         UserModel.findOne(
@@ -149,9 +149,12 @@ module.exports = function(db, mongoose) {
 
                 if (err) {
                     // reject promise if error
+                    console.log("hello man1");
+                    console.log(err);
                     deferred.reject(err);
                 } else {
                     // resolve promise
+                    console.log("hello man");
                     deferred.resolve(doc);
                 }
 

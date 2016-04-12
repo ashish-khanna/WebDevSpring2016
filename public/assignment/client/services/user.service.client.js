@@ -34,15 +34,17 @@
         }
 
         function findUserByCredentials(username, password) {
-            console.log("in userservice findUserByCredentials");
+            console.log("in userservice findUserByCredentials", username, password);
             var deferred = $q.defer();
 
-            $http.get("/api/assignment/user?username="+username+"&password="+password)
+            $http.get("/api/assignment/user/"+username+"/password/"+password)
                 .then(
                     function(response) {
+                        console.log(response);
                         deferred.resolve(response.data);
                     },
                     function(error) {
+                        console.log(error);
                         deferred.reject(error);
                     }
                 );

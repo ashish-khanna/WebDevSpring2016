@@ -16,8 +16,8 @@
         function update(newUser) {
             UserService.updateUser(newUser._id, newUser)
                 .then(function (response) {
-                    if (response.data) {
-                        UserService.setUser(response.data);
+                    if (response) {
+                        UserService.setUser(response);
                      }
                 }
             )

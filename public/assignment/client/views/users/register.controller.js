@@ -13,7 +13,7 @@
             UserService.createUser(user)
                 .then(function(response){
                     if(response){
-                        UserService.setUser(response.data);
+                        UserService.setUser(response);
                         $location.url("/profile");
                     }
             });
