@@ -11,8 +11,14 @@ module.exports = function(app, formModel, fieldModel) {
 
     function getFieldsForForm(req, res) {
         var formId = req.params.formId;
-        var fields = formModel.getFieldsForForm(formId);
-        res.json(fields);
+        formModel.getFieldsForForm(formId)
+            .then(
+                function(form) {
+                    res.json(form.fields.id(req.params.fieldId));
+                },
+                function(err) {
+                    res.status(400).send(err);
+                });
     }
 
     function getFieldTemplateType(req, res) {

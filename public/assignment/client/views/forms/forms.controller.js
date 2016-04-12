@@ -42,7 +42,7 @@
                 .then(
                     function(doc){
                         vm.form = doc;
-                        $scope.forms = vm.form;
+                        $scope.forms.push(vm.form);
                         $scope.selectedFormIndex = null;
                         $scope.newForm = {};
                     }
