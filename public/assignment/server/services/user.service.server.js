@@ -9,7 +9,7 @@ module.exports = function(app, userModel) {
     app.get("/api/assignment/user/:id", profile);
     app.put("/api/assignment/user/:userId", updateUserById);
     app.delete("/api/assignment/user/:userId", deleteUserById);
-    //app.post("/api/project/omdb/logout", logout);
+    //app.post("/api/project_EventManagement/omdb/logout", logout);
 
     function getUsers(req, res){
        if(req.params.username){

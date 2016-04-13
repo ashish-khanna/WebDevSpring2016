@@ -33,6 +33,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 require("./public/assignment/server/app.js")(app, db, mongoose);
+require("./public/project_EventManagement/server/app.js")(app, db, mongoose);
 //require("./public/assignment/server/services/user.service.server.js")(app, db, mongoose);
 //require("./public/assignment/server/services/form.service.server.js")(app, db, mongoose);
 //require("./public/assignment/server/services/field.service.server.js")(app, db, mongoose);

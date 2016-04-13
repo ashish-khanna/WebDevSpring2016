@@ -7,7 +7,7 @@
         .module("EventApp")
         .controller("HeaderController", HeaderController)
 
-    function HeaderController($scope, $rootScope, $location, EventService){
+    function HeaderController($scope, $rootScope, $location, EventService, UserService){
         console.log("this is HeaderController");
         var vm = this
 
@@ -33,6 +33,7 @@
         function logout() {
             $rootScope.currentUser = null;
             $location.url("/");
+            UserService.logout();
         }
 
         function getEvent(query){
