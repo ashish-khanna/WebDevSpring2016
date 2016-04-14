@@ -6,15 +6,22 @@
         .module("EventApp")
         .controller("LoginController", LoginController)
 
-    function LoginController($rootScope, $scope, $location){
+    function LoginController($rootScope, $scope, $location, UserService){
         console.log("LoginController");
 
         $scope.login = login;
 
         function login(user){
             console.log("Click Login button");
-            $rootScope.currentUser = user;
-            $location.url("/");
+            UserService.findUserByCredential(user)
+                .then(
+                    function(response){
+                        console.log("Success in Login");
+                        $rootScope.currentUser = response.data[0];
+                        $location.url("/");
+                    }
+                )
+
         }
     }
 })();

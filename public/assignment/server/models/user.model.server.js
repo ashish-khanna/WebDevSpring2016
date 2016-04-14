@@ -149,12 +149,9 @@ module.exports = function(db, mongoose) {
 
                 if (err) {
                     // reject promise if error
-                    console.log("hello man1");
-                    console.log(err);
                     deferred.reject(err);
                 } else {
                     // resolve promise
-                    console.log("hello man");
                     deferred.resolve(doc);
                 }
 

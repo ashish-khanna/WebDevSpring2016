@@ -14,7 +14,9 @@ module.exports = function(db, mongoose) {
 
 
     var api = {
-        createUser: createUser
+        createUser: createUser,
+        findUserByCredential: findUserByCredential,
+        updateUserPreferences: updateUserPreferences
     };
     return api;
 
@@ -49,6 +51,62 @@ module.exports = function(db, mongoose) {
         // return a promise
         return deferred.promise;
 
+    }
+
+    function findUserByCredential(user) {
+        var uemail = user.email;
+        var upassword = user.password;
+        var deferred = q.defer();
+
+        // find one user with mongoose user model's findOne()
+        UserModelEm.find(
+            // first argument is predicate
+            {
+                email: uemail,
+                password: upassword
+            },
+
+            // doc is unique instance matches predicate
+            function(err, doc) {
+                if (err) {
+                    // reject promise if error
+                    deferred.reject(err);
+                } else {
+                    // resolve promise
+                    deferred.resolve(doc);
+                }
+            });
+
+        return deferred.promise;
+    }
+
+    function updateUserPreferences(user) {
+        var uid = user._id;
+        var upreference = user.preference;
+        var deferred = q.defer();
+
+        // find one user with mongoose user model's findOne()
+        UserModelEm.update(
+            // first argument is predicate
+            {
+                _id: uid
+            },
+            {
+                $set: user
+            },
+
+            // doc is unique instance matches predicate
+            function(err, doc) {
+                if (err) {
+                    // reject promise if error
+                    deferred.reject(err);
+                } else {
+                    // resolve promise
+                    deferred.resolve(doc);
+                }
+            });
+
+        return deferred.promise;
     }
 
 }

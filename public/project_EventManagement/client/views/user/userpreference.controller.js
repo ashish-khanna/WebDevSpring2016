@@ -6,7 +6,7 @@
         .module("EventApp")
         .controller("UserPreferenceController", UserPreferenceController)
 
-    function UserPreferenceController($rootScope, $scope, $location){
+    function UserPreferenceController($rootScope, $scope, $location, UserService){
 
         $scope.savePreference = savePreference;
         $scope.getPreferences = getPreferences;
@@ -110,9 +110,16 @@
         };
 
         function savePreference(){
+            console.log("This is save preference click");
             cu.preference = $scope.selection;
-            $rootScope.currentUser = cu;
-            $location.url("/");
+            UserService.savePreference(cu)
+                .then(
+                    function(response){
+                        console.log("Success in save preference");
+                        $rootScope.currentUser = response.config.data;
+                        $location.url("/");
+                    }
+                )
         }
 
         function getPreferences() {

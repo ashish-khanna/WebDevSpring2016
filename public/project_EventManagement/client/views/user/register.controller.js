@@ -15,6 +15,7 @@
                 .then(
                     function(response){
                         console.log("Success in registration");
+                        $location.url("/login");
                     }
                 )
         }

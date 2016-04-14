@@ -11,6 +11,8 @@
 
         var api = {
             createUser: createUser,
+            findUserByCredential: findUserByCredential,
+            savePreference: savePreference,
             logout: logout
         };
         return api;
@@ -24,6 +26,34 @@
                     },
                     function(error){
                         deferred.reject(error);
+                    }
+                );
+            return deferred.promise;
+        }
+
+        function findUserByCredential(user){
+            var deferred = $q.defer();
+            $http.post("/api/em/userlogin", user)
+                .then(
+                    function(response){
+                        deferred.resolve(response);
+                    },
+                    function(error){
+                        deferred.reject(error);
+                    }
+                );
+            return deferred.promise;
+        }
+
+        function savePreference(user){
+            var deferred = $q.defer();
+            $http.post("/api/em/userpreference", user)
+                .then(
+                    function(response){
+                       deferred.resolve(response);
+                    },
+                    function(error){
+                       deferred.reject(error);
                     }
                 );
             return deferred.promise;

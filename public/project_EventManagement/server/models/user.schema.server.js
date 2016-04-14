@@ -11,7 +11,8 @@ module.exports = function(mongoose) {
         address: String,
         city: String,
         zip: String,
-        phone: String
+        phone: String,
+        preference: [Number]
         // collection property sets
         // collection name to 'user'
     }, {collection: 'em.user'});
