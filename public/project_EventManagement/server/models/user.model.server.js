@@ -96,7 +96,7 @@ module.exports = function(db, mongoose) {
             {
                 $set: user
             },
-
+            {upsert:true},
             // doc is unique instance matches predicate
             function(err, doc) {
                 if (err) {
