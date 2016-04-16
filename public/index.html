@@ -1,87 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="AK">
-    <link rel="icon" href="../../favicon.ico">
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="Web Development class Spring 2016" content="">
+	<meta name="keywords" content="">
+	<meta name="Ashish Khanna" content="Ari Rusmanto">
+	<title>AK</title>
+	
+	<!-- CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/style-responsive.css" rel="stylesheet">
+	<link href="assets/third/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="assets/third/hovericon/css/component.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+	</head>
+	
+	<!-- BODY WITH DATA STYPE FOR SCROLLSPY -->
+	<body class="tooltips" id="top" data-spy="scroll" data-target="#myScrollspy">
+	
+	<!-- START PAGE -->
+	<div class="wrapper">
+	
+		<!-- 
+		===========================================
+		BEGIN HEADER SECTION
+		===========================================
+		-->
+		<div id="header-landing">
+			<!-- NAV MENU WRAPPER FOR FIXED POSITION -->
+			<div id="nav-menu">
+				<!-- NAV MENU CONTAINER -->
+				<div class="container">
+					<!-- LOGO -->
+					<div id="logo">
+					<h1><a href="index.html"><i class="fa fa-flask"></i> Web Dev Spring'16.</a></h1>
+					</div><!-- /#logo -->
+					<!-- END LOGO -->
+					<!-- NAV MENU -->
+					<div class="menus" id="myScrollspy">
+						<ul class="nav scroll-nav">
+							<li class="active"><a href="#top"><i class="fa fa-home"></i><span>Home</span></a></li>
+							<li><a href="#features"><i class="fa fa-laptop"></i><span>Features</span></a></li>
+							<li><a href="#team"><i class="fa fa-users"></i><span>Team</span></a></li>
+							<li><a href="#contact"><i class="fa fa-envelope"></i><span>Contact</span></a></li>
+						</ul>
+					</div><!-- /.menus -->
+					<!-- END NAV MENU -->
+				</div><!-- /.container -->
+				<!-- END NAV MENU CONTAINER -->
+			</div><!-- /.nav-menu -->
+			<!-- END NAV MENU FIXED POSITION -->
+			
+			<!-- HEADER SECTION CONTENT -->
+			<div class="awesome-slogan">
+			<h2><span>My Cool </span> <span>Portal</span></h2>
+			<h4>This <span>Website</span> is developed as part of my course cs5610 at <span>Northeastern University</span></h4>
+				<p>FOLLOW ME (Ashish)</p>
+				<div class="clear"></div>
+				<div class="social-icons">
+					<a href="https://github.com/ashish-khanna/WebDevSpring2016" data-toggle="tooltip" title="Github"><img src="assets/img/social-icons/github.png" alt="Github icon"></a>
+					<a href="https://www.linkedin.com/in/ashishkhanna2004" data-toggle="tooltip" title="Linked In"><img src="assets/img/social-icons/likedin.png" alt="Linkedin icon"></a>
+					<a href="https://www.facebook.com/ashish.khanna.9484" data-toggle="tooltip" title="Facebook"><img src="assets/img/social-icons/facebook.png" alt="Facebook icon"></a>
+					<a href="#fakelink" data-toggle="tooltip" title="Youtube"><img src="assets/img/social-icons/youtube.png" alt="Youtube icon"></a>
+				</div><!-- /.social-icons --> 
+			</div><!-- /.awesome-slogan -->
+			<!-- END HEADER SECTION CONTENT -->
+		</div><!-- /.header-landing -->
+		<!-- 
+		===========================================
+		END HEADER SECTION
+		===========================================
+		-->
+		
+			
+		<!-- 
+		===========================================
+		BEGIN FEATURES SECTION
+		===========================================
+		-->
+		<div class="section-page-landing section-light-grey" id="features">
+			<div class="inner-section">
+				<div class="container">
+					<!-- SECTION TITLE -->
+					<h2 class="text-center">Main Features</h2>
+					
+					<!-- BEGIN FEATURES DESCRIPTION -->
+					<h4 class="text-center">
+					My portal contains all my assignments, wev dev project(Event Management Portal), project documents, Git Repo link.</h4>
+					<!-- END FEATURES DESCRIPTION -->
+					<!-- BEGIN FEATURES COLUMN -->
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<a href="project_EventManagement/client/index.html">
+							<div class="the-box-landing border-hover-bottom text-center">
+								<h4>Launch Project</h4>
+								<img src="assets/img/flat-icon/s3.png" class="small-icon" alt="Features image">
+								<p>
+									Click link to launch the application - Event Management
+								</p>
+							</div><!-- /.the-box-landing .border-hover-bottom .text-center -->
+							</a>
+						</div><!-- /.col-md-3 .col-sm-6 -->
+						<div class="col-md-3 col-sm-6">
+							<a href="https://docs.google.com/document/d/1olsoCuVE_lZohoway-gHbZFSbAFjq5Oe3BtHInCFa9I/edit?usp=sharing">
+							<div class="the-box-landing border-hover-bottom text-center">
+								<h4>Project Documentation</h4>
+								<img src="assets/img/flat-icon/s2.png" class="small-icon" alt="Features image">
+								<p>
+								This section contains link to documentation for project
+								</p>
+							</div><!-- /.the-box-landing .border-hover-bottom .text-center -->
+							</a>
+						</div><!-- /.col-md-3 .col-sm-6 -->
+						<div class="col-md-3 col-sm-6">
+							<a href="https://github.com/ashish-khanna/WebDevSpring2016">
+							<div class="the-box-landing border-hover-bottom text-center">
+								<h4>Git Repo</h4>
+								<img src="assets/img/flat-icon/s7.png" class="small-icon" alt="Features image">
+								<p>
+								This section contains links to my Git repo to view source code
+								</p>
+							</div><!-- /.the-box-landing .border-hover-bottom .text-center -->
+							</a>
+						</div><!-- /.col-md-3 .col-sm-6 -->
+						<div class="col-md-3 col-sm-6">
+							<a href="assignment/client/index.html">
+							<div class="the-box-landing border-hover-bottom text-center">
+								<h4>Assignments</h4>
+								<img src="assets/img/flat-icon/s1.png" class="small-icon" alt="Features image">
+								<p>
+									This section deal with all in class learning and assignments.
+								</p>
+							</div><!-- /.the-box-landing .border-hover-bottom .text-center -->
+							</a>
+						</div><!-- /.col-md-3 col-sm-6 -->
 
-    <title>AK</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="http://v4-alpha.getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
-</head>
-
-<body>
-
-<nav class="navbar navbar-static-top navbar-dark bg-inverse">
-    <a class="navbar-brand" href="#">Web Dev</a>
-    <ul class="nav navbar-nav">
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-        </li>
-    </ul>
-</nav>
-
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <div class="container">
-        <h1 class="display-3">Web Development Spring 2016</h1>
-        <p>This website is developed as a part of my web development course work at <b>Northeastern University</b>. </p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-    </div>
-</div>
-
-<div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Assignment</h2>
-            <p>This section deal with all in class learning and assignment given through out the course work. The
-                assignment involve building a form maker application using HTML5, CSS, AngularJS, MongoDB </p>
-            <p><a class="btn btn-warning" href="assignment/client/index.html" role="button">Go To Assignment &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Project</h2>
-            <p>This section contain the project I will be developing from the learning I will gain in class. I chose to
-                develop an Event Scheduling application for the Northeastern Community using the same technology stack
-                followed in class. </p>
-            <p><a class="btn btn-warning" href="project_EventManagement/home.html" role="button">Go To Project &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Experiments</h2>
-            <p>This section contains small little experiments and proof of concepts needed for project and assignment work.</p>
-            <p><a class="btn btn-warning" href="#" role="button">Go To Experiment &raquo;</a></p>
-        </div>
-    </div>
-
-    <hr>
-
-    <footer>
-        <p>&copy; AK 2016</p>
-    </footer>
-</div> <!-- /container -->
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the views load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"><\/script>')</script>
-<script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-</body>
+					</div><!-- /.row -->
+					<!-- END FEATURES COLUMN -->
+					
+					<!-- BEGIN CALL TO ACTION -->
+					<div class="the-box-landing border-color-left">
+						<div class="row">
+							<div class="col-sm-9">
+								<h3>I have made a tutorial of my portal, please watch it..</h3>
+							</div><!-- /.col-sm-9 -->
+							<div class="col-sm-3">
+								<button class="btn btn-default btn-teplok btn-block btn-lg btn-purchase"><i class="fa fa-shopping-cart"></i> Start Tutorial</button>
+							</div><!-- /.col-sm-3 -->
+						</div><!-- /.row -->
+					</div><!-- /.the-box-landing .border-color-left -->
+					<!-- END CALL TO ACTION -->
+				</div><!-- /.container -->
+			</div><!-- /.inner-section -->
+		</div><!-- /.section-page-landing .section-light-grey -->
+		<!-- 
+		===========================================
+		END HEADER SECTION
+		===========================================
+		-->
+			
+		<!-- 
+		===========================================
+		BEGIN TEAM SECTION
+		===========================================
+		-->
+		<div class="section-page-landing section-light-grey" id="team">
+			<div class="inner-section">
+				<div class="container">
+					<h2 class="text-center">My Team</h2>
+					
+					<!-- TEAM COLUMN -->
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="the-box-landing text-center the-team-landing full">
+								<div class="ava-wrap">
+										<div class="see-detail"></div>
+										<div class="button-link">
+											<a href="https://www.linkedin.com/in/ashishkhanna2004"><i class="fa fa-facebook"></i></a>
+										</div>
+									<img src="assets/img/avatar/ava-10.jpg" alt="Image team">
+								</div><!-- /.ava-wrap -->
+								<div class="des">
+									<h3>Ashish Khanna</h3>
+									<h5>-Full Stack Developer-</h5>
+								</div><!-- /.des -->
+							</div><!-- /.the-box-landing .text-center .the-team-landing full -->
+						</div><!-- /.col-md-3 .col-sm-6 -->
+						<div class="clearfix visible-xs"></div>
+						
+						<!-- YOU CAN USE THIS COLUMN FOR HIRING INFORMATION -->
+						<div class="col-md-9 col-sm-6">
+							<div class="the-box-landing full text-center the-box-transparent">
+								<h2>Web Development Spring 2016 - CS5610</h2>
+								<h4>
+								I have used Bootstrap, HTML5, CSS, AngularJs, Node Js, jquery UI, MongoDB for this portal development. 
+								This portal was developed as a part of course CS5610 under the guidance of <b>Professor Jose Annunziato</b>.
+								</h4>
+							</div><!-- /.the-box-landing .full .text-center .the-box-transparent -->
+						</div><!-- /.col-md-9 .col-sm-6 -->
+					</div><!-- /.row -->
+					<!-- END TEAM COLUMN -->
+				</div><!-- /.container -->
+			</div><!-- /.inner-section -->
+		</div><!-- /.section-page-landing .section-light-grey -->
+		<!-- 
+		===========================================
+		END TEAM SECTION
+		===========================================
+		-->
+	
+			
+		<!-- 
+		===========================================
+		BEGIN CONTACT SECTION
+		===========================================
+		-->
+		<div class="section-page-landing" id="contact">
+			<div class="inner-section">
+				<div class="container">
+					<h2 class="text-center">Get in Touch</h2>
+					<form role="form" class="contact-form" id="ContactForm" method="post">
+						<div class="row">
+							<div class="col-sm-4">
+							  <div class="form-group">
+								<input type="text" name="YourName" class="form-control" placeholder="Your name">
+							  </div>
+							</div>
+							<div class="col-sm-4">
+							  <div class="form-group">
+								<input type="email" name="YourEmail" class="form-control" placeholder="Your email">
+							  </div>
+							</div>
+							<div class="col-sm-4">
+							  <div class="form-group">
+								<input type="text" name="YourWebsite" class="form-control" placeholder="Your website">
+							  </div>
+							</div>
+						</div>
+					  <div class="form-group">
+						<textarea class="form-control" name="YourMessage" style="height: 200px" placeholder="Your message"></textarea>
+					  </div>
+						<div class="row">
+							<div class="col-sm-5">
+							</div>
+							<div class="col-sm-2">
+							  <div class="form-group">
+								<h4 class="text-center" id="SimpleCaptcha"></h4>
+								<input type="text" name="captcha" class="form-control" placeholder="Result">
+							  </div>
+							</div>
+							<div class="col-sm-5">
+							</div>
+						</div>
+						<p class="text-center">
+						<button type="submit" class="btn btn-default btn-teplok"><i class="fa fa-envelope"></i>Submit</button>
+						</p>
+					</form>
+				</div><!-- /.container -->
+			</div><!-- /.inner-section -->
+		</div><!-- /.section-page-landing -->
+		<!-- 
+		===========================================
+		END CONTACT SECTION
+		===========================================
+		-->
+		
+		
+		
+		
+		<!-- 
+		===========================================
+		BEGIN FOOTER SECTION
+		===========================================
+		-->
+		<footer>
+			<div class="footer">
+				<div class="container">
+					&copy; 2016 <a href="https://www.linkedin.com/in/ashishkhanna2004">Ashish Khanna</a><br />
+					</div><!-- /.container -->
+			</div><!-- /.footer -->
+		</footer>
+		<!-- 
+		===========================================
+		END FOOTER SECTION
+		===========================================
+		-->
+		
+		
+		<!-- BACK TO TOP BUTTON -->
+		<div id="back-top">
+			<a href="#top"><i class="fa fa-chevron-up"></i></a>
+		</div>
+		<!-- END BACK TO TOP -->
+		
+		
+	</div><!-- /.wrapper -->
+	<!-- END OF PAGE -->
+	
+	
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/third/validator/bootstrapValidator.min.js"></script>
+		<script src="assets/js/jquery.smooth-scroll.js"></script>
+		
+		<!-- REQUIRED FOR LANDING PAGE -->
+		<script src="assets/third/hovericon/js/modernizr.custom.js"></script>
+		<script src="assets/third/parallax/jquery.parallax-1.1.3.js"></script>
+		<script src="assets/third/parallax/TweenMax.min.js"></script>
+		<script src="assets/third/parallax/jquery.superscrollorama.js"></script>
+		<script src="assets/third/mixitup/jquery.mixitup.js"></script>
+		<script src="assets/third/backstretch/jquery.backstretch.min.js"></script>
+		<script>
+			$.backstretch([
+			  "images/image003.jpg",
+			  "images/image004.jpg",
+			  "images/image005.jpg"
+			  ], {
+				fade: 750,
+				duration: 6000
+			});
+		</script>
+		<script src="assets/js/teplok-one-page.js"></script>
+	</body>
 </html>
