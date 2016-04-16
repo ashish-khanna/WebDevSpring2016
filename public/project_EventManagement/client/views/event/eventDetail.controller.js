@@ -45,10 +45,10 @@
             var cu = $rootScope.currentUser;
             console.log("Click Login button");
 
-            if(cu.likes.indexOf(event.id)){
-                console.log("Already Registered");
-                $scope.err = "Already Registered for this event..!!";
-            }else {
+            //if(cu.likes.indexOf(event.id)){
+            //    console.log("Already Registered");
+            //    $scope.err = "Already Registered for this event..!!";
+            //}else {
                 EventService.saveUserEvent(cu, event)
                     .then(
                         function (response) {
@@ -57,7 +57,7 @@
                             $location.url("/");
                         }
                     )
-            }
+            //}
 
         }
     }
