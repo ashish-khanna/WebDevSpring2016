@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0008aba-a59c-4f8e-8229-42558008a640" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Images/profile.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/Images/profile1.JPG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/server/models/user.model.server.js" afterPath="$PROJECT_DIR$/public/project_EventManagement/server/models/user.model.server.js" />
     </list>
     <ignored path="WebDevSp16.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -816,12 +817,6 @@
       <option name="number" value="Default" />
       <updated>1453769428766</updated>
     </task>
-    <task id="LOCAL-00009" summary="Highlight Active Tab">
-      <created>1454223486228</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1454223486228</updated>
-    </task>
     <task id="LOCAL-00010" summary="Login and Registration Page">
       <created>1454264378062</created>
       <option name="number" value="00010" />
@@ -1110,7 +1105,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460820556281</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Save Preference - testing $set issue fix in server-v1">
+      <created>1460821405320</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1460821405320</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="ToolWindowManager">
