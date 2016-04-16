@@ -8,8 +8,9 @@
 
     function EventController($rootScope, $scope, $location, $routeParams, EventService){
         var vm = this;
-
         var eventId = $routeParams.event;
+
+        $scope.saveEvent = saveEvent;
 
         function init(){
             console.log(eventId);
@@ -38,5 +39,26 @@
                 )
         }
         init();
+
+
+        function saveEvent(event){
+            var cu = $rootScope.currentUser;
+            console.log("Click Login button");
+
+            if(cu.likes.indexOf(event.id)){
+                console.log("Already Registered");
+                $scope.err = "Already Registered for this event..!!";
+            }else {
+                EventService.saveUserEvent(cu, event)
+                    .then(
+                        function (response) {
+                            console.log("Successfully saved events");
+                            $rootScope.currentUser = response.data;
+                            $location.url("/");
+                        }
+                    )
+            }
+
+        }
     }
 })();

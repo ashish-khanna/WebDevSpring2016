@@ -16,7 +16,9 @@ module.exports = function(db, mongoose) {
     var api = {
         createUser: createUser,
         findUserByCredential: findUserByCredential,
-        updateUserPreferences: updateUserPreferences
+        updateUserPreferences: updateUserPreferences,
+        findUserById: findUserById,
+        updateUserLikes: updateUserLikes
     };
     return api;
 
@@ -109,4 +111,60 @@ module.exports = function(db, mongoose) {
         return deferred.promise;
     }
 
+
+    function findUserById(uid) {
+        var deferred = q.defer();
+
+        // find one user with mongoose user model's findOne()
+        UserModelEm.findOne(
+            // first argument is predicate
+            {
+                _id: uid
+            },
+            // doc is unique instance matches predicate
+            function(err, doc) {
+                if (err) {
+                    // reject promise if error
+                    deferred.reject(err);
+                } else {
+                    // resolve promise
+                    deferred.resolve(doc);
+                }
+            });
+
+        return deferred.promise;
+    }
+
+    function updateUserLikes(userId, event){
+        var deferred = q.defer();
+
+        UserModelEm.findOne(
+            // first argument is predicate
+            {
+                _id: userId
+            },
+            // doc is unique instance matches predicate
+            function(err, doc) {
+                if (err) {
+                    // reject promise if error
+                    deferred.reject(err);
+                } else {
+                    // resolve promise
+                    doc.likes.push(event.id);
+                    doc.events.push(event);
+                    doc.save(function(err, doc){
+                        if (err) {
+                            deferred.reject(err);
+                        } else {
+                            // resolve promise with user
+                            deferred.resolve (doc);
+                        }
+                    });
+                    //deferred.resolve(doc);
+                }
+            });
+
+
+        return deferred.promise;
+    }
 }

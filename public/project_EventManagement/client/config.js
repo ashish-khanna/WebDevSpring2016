@@ -11,6 +11,10 @@
                     templateUrl: "views/home/home.view.html",
                     controller: "HomeController"
                 })
+                .when("/home", {
+                    templateUrl: "views/home/home.view.html",
+                    controller: "HomeController"
+                })
                 .when("/login", {
                     templateUrl: "views/user/login.view.html",
                     controller: "LoginController"
@@ -32,12 +36,16 @@
                     controller: "EventListController"
                 })
                 .when("/myFavouriteEvent", {
-                    templateUrl: "views/event/eventList.view.html",
-                    controller: "EventListController"
+                    templateUrl: "views/event/myFavouriteEvents.view.html",
+                    controller: "FavouriteEventController"
                 })
                 .when("/mypreference", {
                     templateUrl: "views/user/userpreference.view.html",
                     controller: "UserPreferenceController"
+                })
+                .when("/myhistory", {
+                    templateUrl: "views/event/userEventHistory.view.html",
+                    controller: "UserEventHistoryController"
                 })
                 .otherwise({
                     redirectTo: "/"

@@ -12,7 +12,8 @@
             searchEvent: searchEvent,
             getEventById: getEventById,
             getEventByQuery: getEventByQuery,
-            getEventBySubCategories: getEventBySubCategories
+            getEventBySubCategories: getEventBySubCategories,
+            saveUserEvent: saveUserEvent
         };
 
         return api;
@@ -90,6 +91,20 @@
                     deferred.resolve(response);
                 }
             );
+            return deferred.promise;
+        }
+
+        function saveUserEvent(cu, event){
+            var deferred = $q.defer();
+            $http.post("/api/em/saveuserevent/"+cu._id, event)
+                .then(
+                    function(response){
+                        deferred.resolve(response);
+                    },
+                    function(error){
+                        deferred.reject(error);
+                    }
+                );
             return deferred.promise;
         }
     }

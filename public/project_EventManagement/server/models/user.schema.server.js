@@ -2,6 +2,8 @@
  * Created by Ashish on 4/12/2016.
  */
 module.exports = function(mongoose) {
+
+    var EventSchema = require("./event.schema.server.js")(mongoose);
     // use mongoose to declare a user schema
     var UserSchema = mongoose.Schema({
         email: String,
@@ -12,7 +14,9 @@ module.exports = function(mongoose) {
         city: String,
         zip: String,
         phone: String,
-        preference: [Number]
+        preference: [Number],
+        likes: [String],
+        events: [EventSchema]
         // collection property sets
         // collection name to 'user'
     }, {collection: 'em.user'});
