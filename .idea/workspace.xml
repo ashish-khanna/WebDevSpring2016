@@ -49,8 +49,8 @@
       <file leaf-file-name="user.model.server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/project_EventManagement/server/models/user.model.server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55586594">
-              <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.2877095">
+              <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -816,12 +816,6 @@
       <option name="number" value="Default" />
       <updated>1453769428766</updated>
     </task>
-    <task id="LOCAL-00008" summary="Commit Assignment v0">
-      <created>1454219950642</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1454219950642</updated>
-    </task>
     <task id="LOCAL-00009" summary="Highlight Active Tab">
       <created>1454223486228</created>
       <option name="number" value="00009" />
@@ -1110,7 +1104,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460819421707</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Save Preference - testing $set issue fix in server-v1">
+      <created>1460820556280</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1460820556281</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1121,7 +1121,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33102253" sideWeight="0.5427928" order="10" side_tool="true" content_ui="tabs" x="12" y="534" width="1362" height="168" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33102253" sideWeight="0.5427928" order="10" side_tool="true" content_ui="tabs" x="12" y="534" width="1362" height="168" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33102253" sideWeight="0.4572072" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33102253" sideWeight="0.5427928" order="2" side_tool="true" content_ui="tabs" x="9" y="259" width="1348" height="209" />
@@ -1150,7 +1150,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Forms Services - Refactor" />
     <MESSAGE value="Project POC" />
     <MESSAGE value="Project POC updated" />
     <MESSAGE value="Client Side changes + Mock Json + Models" />
@@ -1175,7 +1174,8 @@
     <MESSAGE value="Project - User History + Save Events feature implementation" />
     <MESSAGE value="Project - User History + Save Events feature implementation v2" />
     <MESSAGE value="Project - User History + Save Events feature implementation - FIx save event issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project - User History + Save Events feature implementation - FIx save event issue" />
+    <MESSAGE value="Save Preference - testing $set issue fix in server-v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save Preference - testing $set issue fix in server-v1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1624,8 +1624,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/project_EventManagement/server/models/user.model.server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55586594">
-          <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.2877095">
+          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>

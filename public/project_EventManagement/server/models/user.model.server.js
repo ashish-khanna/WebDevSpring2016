@@ -87,6 +87,7 @@ module.exports = function(db, mongoose) {
         var upreference = user.preference;
         var deferred = q.defer();
 
+        delete user._id;
         // find one user with mongoose user model's findOne()
         UserModelEm.update(
             // first argument is predicate
