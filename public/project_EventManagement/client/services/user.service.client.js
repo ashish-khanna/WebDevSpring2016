@@ -7,12 +7,16 @@
         .module("EventApp")
         .factory("UserService", UserService);
 
-    function UserService($http, $rootScope, $q) {
+    function UserService($http, $rootScope, $window, $q) {
 
         var api = {
             createUser: createUser,
             findUserByCredential: findUserByCredential,
             savePreference: savePreference,
+            setRootScope: setRootScope,
+            getRootScope: getRootScope,
+            setUserToWindowScope: setUserToWindowScope,
+            getUserFromWindowScope: getUserFromWindowScope,
             logout: logout
         };
         return api;
@@ -61,6 +65,24 @@
 
         function logout(){
             console.log("Logout here");
+            $rootScope.currentUser = null;
+            $window.sessionStorage.removeItem('id');
+        }
+
+        function setRootScope(user){
+            $rootScope.currentUser = user;
+        }
+
+        function getRootScope(){
+            return $rootScope.currentUser;
+        }
+
+        function setUserToWindowScope(user){
+            $window.sessionStorage.setItem('id', JSON.stringify(user));
+        }
+
+        function getUserFromWindowScope(){
+            return $window.sessionStorage.getItem('id');
         }
     }
 

@@ -6,12 +6,16 @@
         .module("EventApp")
         .controller("HomeController", HomeController)
 
-    function HomeController($rootScope, $scope, $location, EventService) {
+    function HomeController($rootScope, $scope, $location, $window, UserService, EventService) {
         console.log("HomeController");
         var vm = this;
 
         $scope.getCurrentPosition = getCurrentPosition;
         $scope.showDetail = showDetail;
+
+        if(UserService.getUserFromWindowScope()){
+            UserService.setRootScope(JSON.parse(UserService.getUserFromWindowScope()));
+        }
 
         function showDetail(event){
             console.log("this is event");

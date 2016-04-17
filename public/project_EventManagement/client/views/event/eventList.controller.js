@@ -6,7 +6,7 @@
         .module("EventApp")
         .controller("EventListController", EventListController)
 
-    function EventListController($rootScope, $scope, $location, $routeParams, EventService) {
+    function EventListController($rootScope, $scope, $location, $routeParams, UserService, EventService) {
         $scope.showSpinner = true;
         $scope.basicSearchRecords = [];
         $scope.markers = [];
@@ -15,6 +15,10 @@
         var vm = this;
         console.log("Inside Event List");
         var key = $routeParams.key;
+
+        if(UserService.getUserFromWindowScope()){
+            UserService.setRootScope(JSON.parse(UserService.getUserFromWindowScope()));
+        }
 
         function init(){
             EventService.getEventByQuery(key)

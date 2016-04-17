@@ -6,12 +6,16 @@
         .module("EventApp")
         .controller("UserEventHistoryController", UserEventHistoryController)
 
-    function UserEventHistoryController($rootScope, $scope, $location, $routeParams, EventService, EventService) {
+    function UserEventHistoryController($rootScope, $scope, $location, $routeParams, UserService, EventService) {
         console.log("Inside user event history");
+
+        if(UserService.getUserFromWindowScope()){
+            UserService.setRootScope(JSON.parse(UserService.getUserFromWindowScope()));
+        }
 
         function init(){
             console.log("Success in Login");
-            $rootScope.history = $rootScope.currentUser.events;
+            $rootScope.history = UserService.getRootScope().events;
         }
 
         init();

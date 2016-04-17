@@ -30,8 +30,11 @@
             text : 'Science & Technology'
         } ];
 
+        if(UserService.getUserFromWindowScope()){
+            UserService.setRootScope(JSON.parse(UserService.getUserFromWindowScope()));
+        }
+
         function logout() {
-            $rootScope.currentUser = null;
             $location.url("/");
             UserService.logout();
         }

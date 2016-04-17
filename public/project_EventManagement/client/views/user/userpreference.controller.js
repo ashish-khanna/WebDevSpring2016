@@ -11,8 +11,6 @@
         $scope.savePreference = savePreference;
         $scope.getPreferences = getPreferences;
 
-        var cu = $rootScope.currentUser;
-
         $scope.music = [ {
             name : 'Pop',
             value : 3007
@@ -109,6 +107,12 @@
             }
         };
 
+        if(UserService.getUserFromWindowScope()){
+            UserService.setRootScope(JSON.parse(UserService.getUserFromWindowScope()));
+        }
+
+        var cu = $rootScope.currentUser;
+
         function savePreference(){
             console.log("This is save preference click");
             cu.preference = $scope.selection;
@@ -116,15 +120,17 @@
                 .then(
                     function(response){
                         console.log("Success in save preference");
-                        $rootScope.currentUser = response.config.data;
+                        UserService.setUserToWindowScope(response.config.data);
+                        UserService.setRootScope(response.config.data);
+                        //$rootScope.currentUser = response.config.data;
                         $location.url("/");
                     }
                 )
         }
 
         function getPreferences() {
-            if($rootScope.currentUser.preference != null){
-                $scope.selection = $rootScope.currentUser.preference;
+            if(UserService.getRootScope().preference != null){
+                $scope.selection = UserService.getRootScope().preference;
             }
         };
 

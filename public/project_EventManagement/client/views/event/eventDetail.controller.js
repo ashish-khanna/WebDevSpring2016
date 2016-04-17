@@ -6,11 +6,15 @@
         .module("EventApp")
         .controller("EventController", EventController)
 
-    function EventController($rootScope, $scope, $location, $routeParams, EventService){
+    function EventController($rootScope, $scope, $location, $routeParams, UserService, EventService){
         var vm = this;
         var eventId = $routeParams.event;
 
         $scope.saveEvent = saveEvent;
+
+        if(UserService.getUserFromWindowScope()){
+            UserService.setRootScope(JSON.parse(UserService.getUserFromWindowScope()));
+        }
 
         function init(){
             console.log(eventId);
@@ -42,21 +46,18 @@
 
 
         function saveEvent(event){
-            var cu = $rootScope.currentUser;
+            var cu = UserService.getRootScope();
             console.log("Click Login button");
 
-            //if(cu.likes.indexOf(event.id)){
-            //    console.log("Already Registered");
-            //    $scope.err = "Already Registered for this event..!!";
-            //}else {
-                EventService.saveUserEvent(cu, event)
-                    .then(
-                        function (response) {
-                            console.log("Successfully saved events");
-                            $rootScope.currentUser = response.data;
-                            $location.url("/");
-                        }
-                    )
+            EventService.saveUserEvent(cu, event)
+                 .then(
+                      function (response) {
+                          console.log("Successfully saved events");
+                          UserService.setUserToWindowScope(response.data);
+                          UserService.setRootScope(response.data);
+                          $location.url("/");
+                      }
+                 )
             //}
 
         }

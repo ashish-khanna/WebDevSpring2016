@@ -6,7 +6,7 @@
         .module("EventApp")
         .controller("LoginController", LoginController)
 
-    function LoginController($rootScope, $scope, $location, UserService){
+    function LoginController($rootScope, $scope, $location, $window, UserService){
         console.log("LoginController");
 
         $scope.login = login;
@@ -16,8 +16,9 @@
             UserService.findUserByCredential(user)
                 .then(
                     function(response){
-                        console.log("Success in Login");
-                        $rootScope.currentUser = response.data[0];
+                        UserService.setUserToWindowScope(response.data[0]);
+                        UserService.setRootScope(response.data[0]);
+
                         $location.url("/");
                     }
                 )

@@ -6,15 +6,19 @@
         .module("EventApp")
         .controller("FavouriteEventController", FavouriteEventController)
 
-    function FavouriteEventController($rootScope, $scope, $location, $routeParams, EventService) {
+    function FavouriteEventController($rootScope, $scope, $location, $routeParams, UserService, EventService) {
         $scope.showSpinner = true;
         $scope.basicSearchRecords = [];
         $scope.markers = [];
-        $scope.createMarker = createMarker
+        $scope.createMarker = createMarker;
+
+        if(UserService.getUserFromWindowScope()){
+            UserService.setRootScope(JSON.parse(UserService.getUserFromWindowScope()));
+        }
 
         var vm = this;
         console.log("Inside Event List");
-        var subCategories = $rootScope.currentUser.preference.toString();
+        var subCategories = UserService.getRootScope().preference.toString();
 
         function init(){
             EventService.getEventBySubCategories(subCategories)
