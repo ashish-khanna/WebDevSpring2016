@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d0008aba-a59c-4f8e-8229-42558008a640" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/client/services/user.service.client.js" afterPath="$PROJECT_DIR$/public/project_EventManagement/client/services/user.service.client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/client/views/event/eventDetail.controller.js" afterPath="$PROJECT_DIR$/public/project_EventManagement/client/views/event/eventDetail.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/client/views/event/eventList.controller.js" afterPath="$PROJECT_DIR$/public/project_EventManagement/client/views/event/eventList.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/client/views/event/myFavouriteEvents.controller.js" afterPath="$PROJECT_DIR$/public/project_EventManagement/client/views/event/myFavouriteEvents.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/client/views/event/userEventHistory.controller.js" afterPath="$PROJECT_DIR$/public/project_EventManagement/client/views/event/userEventHistory.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/client/views/header/header.controller.js" afterPath="$PROJECT_DIR$/public/project_EventManagement/client/views/header/header.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/client/views/home/home.controller.js" afterPath="$PROJECT_DIR$/public/project_EventManagement/client/views/home/home.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/client/views/main/main.controller.js" afterPath="$PROJECT_DIR$/public/project_EventManagement/client/views/main/main.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/client/views/user/contact.controller.js" afterPath="$PROJECT_DIR$/public/project_EventManagement/client/views/user/contact.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/client/views/user/login.controller.js" afterPath="$PROJECT_DIR$/public/project_EventManagement/client/views/user/login.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/client/views/user/userpreference.controller.js" afterPath="$PROJECT_DIR$/public/project_EventManagement/client/views/user/userpreference.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/project_EventManagement/client/views/user/contact.view.html" afterPath="$PROJECT_DIR$/public/project_EventManagement/client/views/user/contact.view.html" />
     </list>
     <ignored path="WebDevSp16.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,18 +30,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="111" column="9" selection-start-line="109" selection-start-column="7" selection-end-line="111" selection-end-column="9" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.service.client.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/project_EventManagement/client/services/user.service.client.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#42#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -118,14 +96,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userEventHistory.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="userEventHistory.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/project_EventManagement/client/views/event/userEventHistory.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45013478">
+            <state vertical-scroll-proportion="0.0">
               <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.view.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/project_EventManagement/client/views/user/contact.view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44347826">
+              <caret line="9" column="102" selection-start-line="9" selection-start-column="102" selection-end-line="9" selection-end-column="102" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,7 +172,6 @@
         <option value="$PROJECT_DIR$/public/assignment/server/models/user.model.server.js" />
         <option value="$PROJECT_DIR$/public/project_EventManagement/client/views/user/register.controller.js" />
         <option value="$PROJECT_DIR$/public/project_EventManagement/server/services/user.service.server.js" />
-        <option value="$PROJECT_DIR$/public/project_EventManagement/client/views/user/contact.view.html" />
         <option value="$PROJECT_DIR$/public/project_EventManagement/client/views/home/home.view.html" />
         <option value="$PROJECT_DIR$/public/project_EventManagement/server/models/user.schema.server.js" />
         <option value="$PROJECT_DIR$/public/project_EventManagement/server/app.js" />
@@ -210,6 +197,7 @@
         <option value="$PROJECT_DIR$/public/project_EventManagement/client/views/event/myFavouriteEvents.controller.js" />
         <option value="$PROJECT_DIR$/public/project_EventManagement/client/views/event/eventList.controller.js" />
         <option value="$PROJECT_DIR$/public/project_EventManagement/client/views/event/userEventHistory.controller.js" />
+        <option value="$PROJECT_DIR$/public/project_EventManagement/client/views/user/contact.view.html" />
       </list>
     </option>
   </component>
@@ -389,10 +377,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -408,105 +392,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="project_EventManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDevSp16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDevSp16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project_EventManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDevSp16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDevSp16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project_EventManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="event" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDevSp16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebDevSp16" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project_EventManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -635,12 +521,6 @@
       <created>1453769428766</created>
       <option name="number" value="Default" />
       <updated>1453769428766</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Minor changes to Admin Page">
-      <created>1454627561055</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1454627561055</updated>
     </task>
     <task id="LOCAL-00014" summary="Fixing Fields HTML + Home Page">
       <created>1454707285243</created>
@@ -930,7 +810,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460842595779</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Root Scope Refactoring - Created UserService Funct to set RootScope">
+      <created>1460914398147</created>
+      <option name="number" value="00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1460914398147</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -970,7 +856,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Field view + controller + refactoring callback" />
     <MESSAGE value="Push Field + Form" />
     <MESSAGE value="Project Home Pages" />
     <MESSAGE value="Google Map and Eventbrite API fix" />
@@ -995,7 +880,8 @@
     <MESSAGE value="Contact Page Img" />
     <MESSAGE value="Landing Page Refactoring" />
     <MESSAGE value="Project Semi-Final Version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Semi-Final Version" />
+    <MESSAGE value="Root Scope Refactoring - Created UserService Funct to set RootScope" />
+    <option name="LAST_COMMIT_MESSAGE" value="Root Scope Refactoring - Created UserService Funct to set RootScope" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1148,14 +1034,6 @@
     <entry file="file://$PROJECT_DIR$/public/images/profile.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/project_EventManagement/client/views/user/contact.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/project_EventManagement/client/views/event/myFavouriteEvents.view.html">
@@ -1446,11 +1324,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/project_EventManagement/client/views/event/userEventHistory.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45013478">
+        <state vertical-scroll-proportion="0.0">
           <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/project_EventManagement/client/views/user/contact.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44347826">
+          <caret line="9" column="102" selection-start-line="9" selection-start-column="102" selection-end-line="9" selection-end-column="102" />
+          <folding />
         </state>
       </provider>
     </entry>
