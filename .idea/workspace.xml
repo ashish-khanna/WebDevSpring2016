@@ -112,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/public/project_EventManagement/client/views/user/contact.view.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.44347826">
-              <caret line="9" column="106" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
+              <caret line="9" column="105" selection-start-line="9" selection-start-column="105" selection-end-line="9" selection-end-column="105" />
               <folding />
             </state>
           </provider>
@@ -522,12 +522,6 @@
       <option name="number" value="Default" />
       <updated>1453769428766</updated>
     </task>
-    <task id="LOCAL-00015" summary="assignment1">
-      <created>1454708607280</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1454708607280</updated>
-    </task>
     <task id="LOCAL-00016" summary="assignment2">
       <created>1455305863202</created>
       <option name="number" value="00016" />
@@ -816,7 +810,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460914644708</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Contact Page Image URL changed-v1">
+      <created>1460914728135</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1460914728135</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -856,7 +856,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Project Home Pages" />
     <MESSAGE value="Google Map and Eventbrite API fix" />
     <MESSAGE value="Event Details Page" />
     <MESSAGE value="Event Details Page - Google Map Integrated" />
@@ -881,7 +880,8 @@
     <MESSAGE value="Project Semi-Final Version" />
     <MESSAGE value="Root Scope Refactoring - Created UserService Funct to set RootScope" />
     <MESSAGE value="Contact Page Image URL changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Contact Page Image URL changed" />
+    <MESSAGE value="Contact Page Image URL changed-v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contact Page Image URL changed-v1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -914,6 +914,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6296296">
           <caret line="24" column="21" selection-start-line="15" selection-start-column="20" selection-end-line="24" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,7 +1032,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/profile.JPG">
+    <entry file="file://$PROJECT_DIR$/public/images/profile.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1335,7 +1336,7 @@
     <entry file="file://$PROJECT_DIR$/public/project_EventManagement/client/views/user/contact.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44347826">
-          <caret line="9" column="106" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
+          <caret line="9" column="105" selection-start-line="9" selection-start-column="105" selection-end-line="9" selection-end-column="105" />
           <folding />
         </state>
       </provider>
