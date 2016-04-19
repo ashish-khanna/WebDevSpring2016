@@ -60,8 +60,11 @@
                         ng-show="currentUser"><a href="#/myhistory"><i
                         class="fa fa-history"></i></i> History</a></li>
                 <li ng-class="{'active' : $location.url().indexOf('contact') != -1}">
-                    <a href="#/contact"><i class="fa fa-comment"></i>
+                    <a href="#/contact" ng-hide="currentUser && currentUser.role.indexOf('admin') >=0"><i class="fa fa-comment"></i>
                     Contact</a></li>
+                <li ng-class="{'active' : $location.url().indexOf('contact') != -1}">
+                    <a href="#/uploadevent" ng-show="currentUser && currentUser.role.indexOf('admin') >=0"><i class="fa fa-upload"></i>
+                        Upload</a></li>
             </ul>
         </div>
     </div>

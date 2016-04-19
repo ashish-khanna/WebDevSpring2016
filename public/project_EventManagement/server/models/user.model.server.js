@@ -31,7 +31,8 @@ module.exports = function(db, mongoose) {
             "address": user.address,
             "city": user.city,
             "zip": user.zipCode,
-            "phone" : user.phone
+            "phone" : user.phone,
+            "role": "admin"
         };
 
         var deferred = q.defer();

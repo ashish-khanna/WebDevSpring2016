@@ -16,7 +16,8 @@ module.exports = function(mongoose) {
         phone: String,
         preference: [Number],
         likes: [String],
-        events: [EventSchema]
+        events: [EventSchema],
+        role:[String]
         // collection property sets
         // collection name to 'user'
     }, {collection: 'em.user'});

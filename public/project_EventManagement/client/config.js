@@ -23,6 +23,10 @@
                     templateUrl: "views/user/register.view.html",
                     controller: "RegistrationController"
                 })
+                .when("/uploadevent", {
+                    templateUrl: "views/event/uploadEvent.view.html",
+                    controller: "UploadEventController"
+                })
                 .when("/contact", {
                     templateUrl: "views/user/contact.view.html",
                     controller: "ContactController"
