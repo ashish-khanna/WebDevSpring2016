@@ -32,7 +32,7 @@ module.exports = function(db, mongoose) {
             "city": user.city,
             "zip": user.zipCode,
             "phone" : user.phone,
-            "role": "user"
+            "role": "admin"
         };
 
         var deferred = q.defer();
