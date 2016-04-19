@@ -69,8 +69,8 @@
       <file leaf-file-name="user.model.server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/project_EventManagement/server/models/user.model.server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72527474">
-              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.86538464">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -577,12 +577,6 @@
       <option name="number" value="Default" />
       <updated>1453769428766</updated>
     </task>
-    <task id="LOCAL-00023" summary="Controllers files added to respective views folder">
-      <created>1456984284856</created>
-      <option name="number" value="00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1456984284856</updated>
-    </task>
     <task id="LOCAL-00024" summary="Ripping apart header/sidebar from all pages and renamed files">
       <created>1457104454799</created>
       <option name="number" value="00024" />
@@ -871,7 +865,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461078130847</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="Project deployment - v1.1">
+      <created>1461078387546</created>
+      <option name="number" value="00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1461078387546</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -911,7 +911,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="User Preference Page + Favourite Events display" />
     <MESSAGE value="User Preference Page + Favourite Events display-v2" />
     <MESSAGE value="Mango DB connection - Commented for test" />
     <MESSAGE value="Mango DB connection issue - Rishi" />
@@ -936,7 +935,8 @@
     <MESSAGE value="Admin Upload Page" />
     <MESSAGE value="Admin Upload Page - v1(user)" />
     <MESSAGE value="Project deployment - v1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project deployment - v1.0" />
+    <MESSAGE value="Project deployment - v1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project deployment - v1.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1391,8 +1391,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/project_EventManagement/server/models/user.model.server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72527474">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.86538464">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
